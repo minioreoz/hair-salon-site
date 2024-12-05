@@ -4,8 +4,8 @@
   "description": "A hair salon client website.",
   "main": "main.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,6 @@
     "tough-cookie": "^5.0.0"
   },
   "devDependencies": {
-    "parcel": "^2.13.2"
+    "vite": "^6.0.2"
   }
 }
