@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="en">
   <head>
     <!-- PAGE INFO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaizen Hair Studio by Minh Nguyen - Premier Hair Stylist in Vintage Park Houston, TX</title>
-    <meta name="description" content="Premier hair studio located in Vintage Park, TX. Specializing in bold cuts, balayage, color, and extensions. Book Online.">
+    <title>Kaizen Hair Studio Vintage Park | Top Hair Stylist in Houston</title>
+    <meta name="description" content="Expert Houston hair stylist at Vintage Park. Balayage from $190, cuts from $72, extensions & more. Book instantly online. Goldwell, Oribe & Amika products available.">
+    <meta name="keywords" content="hair stylist houston, houston hair stylist, vintage park hair salon, cypress hair salon, goldwell products houston, balayage houston, hair extensions houston">
     <meta name="google-site-verification" content="aGlBhCVSGSl6BzqNyDNLU_wQhbq7mWsgHWQ2Hf6xcc8" />
 
-    <!-- SWIPER  -->
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-  />
-    
-    <!-- ICONS -->
+    <!-- OPEN GRAPH TAGS FOR SOCIAL SHARING -->
+    <meta property="og:title" content="Top Hair Stylist in Houston | Kaizen Hair Studio Vintage Park">
+    <meta property="og:description" content="Expert Houston hair stylist offering instant online booking. Balayage from $190, haircuts from $72. Premium cuts, color, and extensions. Goldwell, Oribe & Amika products.">
+    <meta property="og:image" content="./assets/img/logo.png">
+    <meta property="og:url" content="https://kaizenhair.com">
+    <meta property="og:type" content="website">
+
+    <!-- FAVICON -->
     <link rel="icon" type="img/x-icon" href="./assets/img/favicon.ico">
     
     <!-- STYLES -->
@@ -39,320 +41,671 @@
   </script>
   
   <body>
-    <header id="header">
-      <nav class="container">
-        <a class="logo" href="#">KAIZEN<span> HAIR STUDIO</span></a>
-        <!-- MENU -->
-        <div class="menu">
-          <ul class="grid">
-            <li><a class="title" href="#home">Home</a></li>
-            <li><a class="title" href="#about">About</a></li>
-            <li><a class="title" href="#services">Services</a></li>
-            <li><a class="title" href="#testimonials">Testimonials</a></li>
-            <li><a class="title" href="#contact">Contact</a></li>
-          </ul>
+    <header id="header" class="modern-header">
+      <div class="container">
+        <div class="header-content">
+          <a class="logo" href="/">
+            <img src="./assets/img/logo.png" alt="Kaizen Hair Studio" class="logo-img">
+            <span class="logo-text">KAIZEN<span> HAIR STUDIO</span></span>
+          </a>
+          <nav class="main-nav">
+            <ul class="menu">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+              <span class="hamburger"></span>
+            </button>
+          </nav>
         </div>
-        <!-- /MENU -->
-        <div class="toggle icon-menu"></div>
-        <div class="toggle icon-close"></div>
-      </nav>
+      </div>
     </header>
 
     <main>
-
-      <!-- HOME  -->
-      <section class="section" id="home">
-        <div class="container grid">
-          <div class="image">
-            <img
-              src="./assets/img/logo.png"
-              alt="Kaizen Hair Studio logo."
-            />
-          </div>
-          <div class="text">
-            <h2 class="title">Seamless Beauty, <br> Kaizen Style.</h2>
-
-              <!-- Desktop version -->
-              <p class="desktop-version">
-                A hair studio located inside <a href="https://www.salonboutique.com/location/houston#directory" rel="noopener noreferrer" target="_blank"><strong>Salon Boutique Vintage Park</strong></a> in Houston.
-                <br><br> 
-                Visits are by appointment only.
+      <!-- HERO SECTION  -->
+      <section class="section hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">Houston's<br>Premier Hair<br>Stylist</h1>
+              <h2 class="hero-subtitle">
+                Book Instantly Online •<br>
+                Balayage from $190 • Haircuts from $72
+              </h2>
+              
+              <p class="hero-description">
+                An award-winning hair studio in 
+                <a href="#locations" class="text-link">Vintage Park Houston</a>, 
+                serving clients throughout Houston, Cypress, and Spring areas.
               </p>
-
-              <!-- Mobile version -->
-              <p class="mobile-version">
-                A hair studio located inside <a href="https://www.salonboutique.com/location/houston#directory" rel="noopener noreferrer" target="_blank"><strong>Salon Boutique Vintage Park</strong></a> in Houston. Visits are by appointment only.
-              </p>
-
-              <a class="button" href="https://kaizenhair.square.site" rel="noopener noreferrer" target="_blank">Book Online ></a>
-          </div>
-        </div>
-      </section>
-      
-
-      <div class="divider-1"></div>
-
-      <!-- ABOUT KAIZEN  -->
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image">
-            <img
-              src="./assets/img/styling.png"
-              alt="Minh Nguyen styling hair."
-            />
-          </div>
-          <div class="text">
-
-            <h2 class="title">Why Kaizen?</h2>
+              <p>Visits are by appointment only.</p>
+              
+              <a href="https://kaizenhair.square.site" class="button" rel="noopener noreferrer" target="_blank">Book Instantly Online</a>
+            </div>
             
-            <!-- Desktop version -->
-            <p class="desktop-version">
-              Kaizen, meaning <strong>change for the better</strong>, is a Japanese philosophy that embodies our approach to beauty and personal growth. 
-             <br><br>
-              Experience the essence of kaizen at <strong>Kaizen Hair Studio</strong>, where Minh's artistry brings innovation and creativity to life with every cut and stroke, fostering personal growth and beauty. Our salon is a sanctuary of transformation, where each visit is an opportunity for reinvention.
-              Join us for a journey of self-transformation and endless possibilities.
-            </p>
-
-            <!-- Mobile version -->
-            <p class="mobile-version">
-              Discover the essence of kaizen at <strong>Kaizen Hair Studio</strong>, where Minh's artistry embodies the Japanese philosophy of continuous improvement. 
-              <br><br>
-              Join us for a transformative journey of endless possibilities.
-            </p>
-
+            <div class="hero-image">
+              <div class="image-container">
+                <img src="./assets/img/logo.png" alt="Kaizen Hair Studio logo" class="logo-badge">
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <div class="divider-2"></div>
-
-      <!-- ABOUT MINH -->
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image">
-            <img src="./assets/img/profile.png" alt="Minh Nguyen profile photo"
-            />
-          </div>
-          <div class="text">
-            <h2 class="title">Meet Minh</h2>
-
-            <!-- Desktop version -->
-            <p class="desktop-version">
-              Minh is a premier hair stylist trained at the prestigious <strong>Vidal Sassoon Academy</strong> in Santa Monica, California.
-              <br><br>
-              In addition, Minh has received industry gold standard certifications, including becoming a <strong>Goldwell Master Colorist</strong> and a <strong>Natural Beaded Rows Extension Specialist</strong>. 
-              <br><br>
-              In the salon, Minh shines when working with blondes, mastering dimensional colors through techniques like balayage and color melting. 
-              Her expertise allows her to craft the sought-after lived-in look, blending artistry with precision to create effortlessly beautiful hair.
-            </p>
-
-            <!-- Mobile version -->
-            <p class="mobile-version">
-              Minh is as a <strong>Goldwell Master Colorist</strong> and <strong>Natural Beaded Rows Extension Specialist</strong>. 
-              <br><br>
-              In the salon, Minh shines when working with blondes, mastering dimensional colors through techniques like balayage and color melting.
-            </p>
+      <!-- ABOUT SECTION  -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section-grid">
+            <div class="about-image">
+              <img src="./assets/img/styling.png" alt="Minh Nguyen - Expert Hair Stylist in Houston's Vintage Park area">
+            </div>
+            
+            <div class="about-content">
+              <h2 class="section-title">Why Choose Our Vintage Park Hair Salon?</h2>
+              
+              <p>
+                Kaizen, meaning <strong>change for the better</strong>, is a Japanese philosophy that embodies our approach to beauty and personal growth. It's what makes us one of the <strong>top-rated hair salons in Vintage Park and Houston</strong>.
+              </p>
+              
+              <p>
+                Experience the essence of kaizen at <strong>Kaizen Hair Studio</strong>, where Minh's artistry brings innovation and creativity to life with every cut and stroke, fostering personal growth and beauty.
+              </p>
+              
+              <p>
+                Looking for <strong>exceptional hair services in Houston or Cypress</strong>? Our transparent pricing, instant online booking, and premium products including <strong>Goldwell, Oribe, and Amika</strong> make us the preferred choice for discerning clients in the area.
+              </p>
+              
+              <a href="#services" class="button button-outline">Explore Our Services</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <div class="divider-1"></div>
+      <!-- STYLIST SECTION -->
+      <section class="section stylist" id="stylist">
+        <div class="container">
+          <div class="section-grid reverse">
+            <div class="stylist-image">
+              <img src="./assets/img/profile.png" alt="Minh Nguyen - Top-rated hair stylist in Houston and Vintage Park">
+            </div>
+            
+            <div class="stylist-content">
+              <h2 class="section-title">Meet Minh - Houston's Expert Hair Stylist</h2>
+              
+              <p>
+                Minh is a top-rated <strong>hair stylist in Houston</strong> trained at the prestigious <strong>Vidal Sassoon Academy</strong> in Santa Monica, California.
+              </p>
+              
+              <p>
+                In addition, Minh has received industry gold standard certifications, including becoming a <strong>Goldwell Master Colorist</strong> and a <strong>Natural Beaded Rows Extension Specialist</strong>. 
+              </p>
+              
+              <p>
+                As one of the most sought-after <strong>Houston hair stylists</strong>, Minh shines when working with blondes, mastering dimensional colors through techniques like balayage and color melting.
+              </p>
+              
+              <div class="location-info">
+                <p>
+                  <strong>Salon Boutique Vintage Park</strong><br>
+                  118 Vintage Park Blvd Suite 25<br>
+                  Houston, TX 77070
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <!-- SERVICES  -->
-      <section class="section" id="services">
-        <div class="container grid">
-          <header>
-            <h2 class="title">Services</h2>
-            <p class="subtitle">
+      <!-- SERVICES SECTION -->
+      <section class="section services" id="services">
+        <div class="container">
+          <header class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">
               Experience the difference with our range of high-quality services using industry-leading products, including <a href="https://www.oribe.com/" rel="noopener noreferrer" target="_blank"><strong>Oribe</strong></a> and <a href="https://www.goldwell.com/en-gb/products/color/" rel="noopener noreferrer" target="_blank"><strong>Goldwell</strong></a>.
             </p>
-            <br>
-            <a class="button" href="https://kaizenhair.square.site" rel="noopener noreferrer" target="_blank">View all Services ></a>
           </header>
-          <div class="cards grid">
-            <div class="card">
-              <i class="icon-woman-hair"></i>
-              <h3 class="title">Extensions</h3>
-              <p class="services">
-                Try bespoke <a href="https://islahair.com/" rel="noopener noreferrer" target="_blank"><strong>Natural Beaded Rows</strong></a> extensions for gorgeous flowing locks.
-                <br><br> 
-                Also available:
-              <br><br>
-              <ul class="services">
-                <li>Smoothing Treatment</li>
-                <li>Blowdry Style</li>
-              </ul>
-            </p>
-            </div>
-            <div class="card">
-              <i class="icon-trim"></i>
-              <h3 class="title">Cut</h3>
-              <p class="services">Includes: Consultation, Shampoo, Cut, Style.
-              <br><br>
-              <ul class="services">
-                <li>Women's Cut</li>
-                <li>Women's Cut & Color</li>
-                <li>Men's Cut</li>
-                <li>Men's Cut & Color</li>
-              </ul>
-            </p>
-            </div>
-            <div class="card">
-              <i class="icon-cosmetic"></i>
-              <h3 class="title">Color</h3>
-              <p class="services">Includes: Consultation, Gray Coverage and Toner if necessary, Blow Dry and Style.
-                <br><br>
-                <ul class="services">
-                  <li>Color Balance</li>
-                  <li>Highlights or Lowlights</li>
-                  <li>Balayage</li>
-                  <li>Glaze</li>
-                </ul>
+          
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="icon-woman-hair"></i>
+              </div>
+              <h3 class="service-title">Hair Extensions</h3>
+              <p class="service-description">
+                Try bespoke <a href="https://islahair.com/" rel="noopener noreferrer" target="_blank"><strong>Natural Beaded Rows</strong></a> extensions for gorgeous flowing locks. Perfect for adding both length and volume.
               </p>
+              <ul class="service-list">
+                <li>Extension Maintenance</li>
+                <li>Extension Removal</li>
+                <li>Extension Consultation</li>
+              </ul>
             </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="icon-trim"></i>
+              </div>
+              <h3 class="service-title">Precision Cuts</h3>
+              <p class="service-description">
+                Our women's and men's haircuts include: Consultation, Shampoo, Cut, Style.
+              </p>
+              <ul class="service-list">
+                <li>Women's Cut & Style - $72</li>
+                <li>Men's Cut & Style - $50+</li>
+                <li>Color with Haircut Packages</li>
+              </ul>
+            </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="icon-cosmetic"></i>
+              </div>
+              <h3 class="service-title">Color Services</h3>
+              <p class="service-description">
+                Includes: Consultation, Gray Coverage and Toner if necessary, Blow Dry and Style.
+              </p>
+              <ul class="service-list">
+                <li>Full & Partial Highlights - $160+</li>
+                <li>Balayage & Ombré - $190+</li>
+                <li>Color Balance - $87+</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="service-cta">
+            <a href="#pricing" class="button">View Our Full Price List</a>
+            <a href="https://kaizenhair.square.site" class="button button-outline" rel="noopener noreferrer" target="_blank">Book Now</a>
           </div>
         </div>
       </section>
 
-      <div class="divider-2"></div>
-
-      <!-- TESTIMONIALS  -->
-      <section class="section" id="testimonials">
+      <!-- PRICING SECTION -->
+      <section class="section pricing" id="pricing">
         <div class="container">
-          <header>
-            <h2 class="title">Love from our clients</h2>
-            <p>Share your review on <a href="https://maps.app.goo.gl/mKn13ybzT4XkkHJcA?g_st=ic" rel="noopener noreferrer" target="_blank"><strong>Google</strong></a> and <a href="https://www.yelp.com/biz/kaizen-hair-studio-houston" rel="noopener noreferrer" target="_blank"><strong>Yelp</strong></a>! Check us out at <a href="https://instagram.com/kaizenhairhtx" rel="noopener noreferrer" target="_blank"><strong>kaizenhairhtx <i class="icon-instagram"></i></strong></a></p>
+          <header class="section-header">
+            <h2 class="section-title">Our Pricing</h2>
+            <p class="section-subtitle">
+              Transparent pricing for all our services. Book online instantly.
+            </p>
           </header>
+          
+          <div class="pricing-grid">
+            <div class="pricing-category">
+              <h3>Haircuts & Styling</h3>
+              <ul class="price-list">
+                <li>
+                  <div class="service-name">Women's Haircut</div>
+                  <div class="service-details">
+                    <span class="price">$72</span>
+                    <span class="duration">45 mins</span>
+                  </div>
+                  <div class="service-description">Includes consultation, shampoo, cut, and style.</div>
+                </li>
+                <li>
+                  <div class="service-name">Men's Haircut</div>
+                  <div class="service-details">
+                    <span class="price">$50+</span>
+                    <span class="duration">30 mins+</span>
+                  </div>
+                  <div class="service-description">Includes consultation, shampoo, cut, and style.</div>
+                </li>
+                <li>
+                  <div class="service-name">Blow Dry Style</div>
+                  <div class="service-details">
+                    <span class="price">$15+</span>
+                    <span class="duration">15 mins+</span>
+                  </div>
+                  <div class="service-description">Shampoo & blow dry. Add curls or flat iron for sleek look: +$15.</div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="pricing-category">
+              <h3>Color Services</h3>
+              <ul class="price-list">
+                <li>
+                  <div class="service-name">Balayage</div>
+                  <div class="service-details">
+                    <span class="price">$190</span>
+                    <span class="duration">3 hrs</span>
+                  </div>
+                  <div class="service-description">Hand-painted highlights for natural-looking dimension. Includes consultation, toner/glaze, and blow dry/style.</div>
+                </li>
+                <li>
+                  <div class="service-name">Highlights or Lowlights</div>
+                  <div class="service-details">
+                    <span class="price">$160</span>
+                    <span class="duration">2 hrs 15 mins</span>
+                  </div>
+                  <div class="service-description">Includes glaze, gray coverage if necessary, and blow dry/style.</div>
+                </li>
+                <li>
+                  <div class="service-name">Color Balance</div>
+                  <div class="service-details">
+                    <span class="price">$87+</span>
+                    <span class="duration">1 hr 30 mins+</span>
+                  </div>
+                  <div class="service-description">Gray coverage or one all-over color & blow dry.</div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="pricing-category">
+              <h3>Specialty Services</h3>
+              <ul class="price-list">
+                <li>
+                  <div class="service-name">NBR Extensions</div>
+                  <div class="service-details">
+                    <span class="price">Consultation Required</span>
+                    <span class="duration">Varies</span>
+                  </div>
+                  <div class="service-description">Natural Beaded Rows extensions - hand-tied human hair secured with beads and stitching.</div>
+                </li>
+                <li>
+                  <div class="service-name">Smoothing Treatment</div>
+                  <div class="service-details">
+                    <span class="price">$250</span>
+                    <span class="duration">2 hrs</span>
+                  </div>
+                  <div class="service-description">Brazilian Blowout/Keratin treatment to eliminate frizz and enhance manageability.</div>
+                </li>
+                <li>
+                  <div class="service-name">Glaze</div>
+                  <div class="service-details">
+                    <span class="price">$80+</span>
+                    <span class="duration">45 mins+</span>
+                  </div>
+                  <div class="service-description">Change tone, add shine, or refresh between appointments.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="pricing-note">
+            <p>*All prices are starting prices and may vary based on hair length, thickness, and product usage.</p>
+            <a class="button" href="https://kaizenhair.square.site" rel="noopener noreferrer" target="_blank">Book Now</a>
+          </div>
+        </div>
+      </section>
 
-          <div class="testimonials swiper">
-            <div class="swiper-wrapper">
-  
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>Minh is a super star. She is not just a hairdresser. She is an artist. And she wants to make you feel and look your best when you leave the salon. 
-                  </p>
-                  <cite>
-                    Luis E.
-                  </cite>
-                </blockquote>
+      <!-- PRODUCTS SECTION -->
+      <section class="section products" id="products">
+        <div class="container">
+          <header class="section-header">
+            <h2 class="section-title">Premium Hair Products</h2>
+            <p class="section-subtitle">
+              Take home the same professional-grade products we use in our Vintage Park salon.
+            </p>
+          </header>
+          
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-icon">
+                <i class="icon-cosmetic"></i>
               </div>
+              <h3 class="product-title">Goldwell Products</h3>
+              <p class="product-description">
+                Experience the quality of <strong>Goldwell color and hair care products</strong> used by top Houston hair stylists.
+              </p>
+              <ul class="product-list">
+                <li>Kerasilk Treatments</li>
+                <li>Dualsenses Hair Care</li>
+                <li>StyleSign Styling Products</li>
+              </ul>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-icon">
+                <i class="icon-woman-hair"></i>
+              </div>
+              <h3 class="product-title">Oribe Luxury Products</h3>
+              <p class="product-description">
+                Elevate your hair care routine with <strong>premium Oribe products</strong> available at our Vintage Park salon.
+              </p>
+              <ul class="product-list">
+                <li>Gold Lust Collection</li>
+                <li>Magnificent Volume</li>
+                <li>Signature Styling Products</li>
+              </ul>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-icon">
+                <i class="icon-trim"></i>
+              </div>
+              <h3 class="product-title">Amika Hair Products</h3>
+              <p class="product-description">
+                Add <strong>Amika's vibrant, performance-driven products</strong> to your hair care arsenal.
+              </p>
+              <ul class="product-list">
+                <li>Perk Up Dry Shampoo</li>
+                <li>Soulfood Nourishing Mask</li>
+                <li>The Wizard Detangling Primer</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="product-cta">
+            <p>All products available for purchase in-salon. We accept Visa, Mastercard, American Express, Discover, Apple Pay, Google Pay, and more.</p>
+            <a class="button button-outline" href="#contact">Ask About Products</a>
+          </div>
+        </div>
+      </section>
 
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>Minh has been cutting and coloring my hair for years and is a magician! Her balayage technique is flawless and she knows just how to handle my very thick, seemingly endless supply of wavy hair. She is also so kind and easy to communicate with!
-                  </p>
-                  <cite>
-                    Alexia B.
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>I've been told by many barbers and stylists alike that my hair is incredibly difficult to cut. Minh has always risen to the challenge and been able to deliver on a great haircut every single time. She's definitely one of the best around at what she does, and I wouldn't hesitate to recommend her to anyone!
-                  </p>
-                  <cite>
-                    Ryan N.
-                  </cite>
-                </blockquote>
-              </div>
-  
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span> Minh has been doing my hair for years. I absolutely love her! She is by far the best stylist I’ve ever had! Perfect cut and color every time!
-                  </p>
-                  <cite>
-                    Andrea L.
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>I'll follow Minh wherever she goes! I get constant compliments on my color and even when I'm unsure of what I want, she makes magic out of my hair! 
-                  </p>
-                  <cite>
-                    Sunni H.
-                  </cite>
-                </blockquote>
-              </div>
+      <!-- TESTIMONIALS SECTION -->
+      <section class="section testimonials" id="testimonials">
+        <div class="container">
+          <header class="section-header">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">
+              Here's what our clients have to say about their experience at Kaizen Hair Studio.
+            </p>
+          </header>
+          
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>Minh is a super star. She is not just a hairdresser. She is an artist. And she wants to make you feel and look your best when you leave the salon. I've tried many salons in Houston, but Kaizen is hands-down the best!
+                </p>
+                <cite>
+                  Levi D.
+                </cite>
+              </blockquote>
             </div>
 
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-      </section>
-      
-      <div class="divider-1"></div>
+            <div class="testimonial-card">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>Minh has been cutting and coloring my hair for years and is a magician! Her balayage technique is flawless and she knows just how to handle my very thick, seemingly endless supply of wavy hair. The Goldwell products she recommends have completely transformed my hair health.
+                </p>
+                <cite>
+                  Alexia B.
+                </cite>
+              </blockquote>
+            </div>
 
-      <!-- INSTAGRAM FEED
-      <section class="section" id="testimonials">
-        <div class="container grid">
-          <header>
-            <h2 class="title">@kaizenhairhtx</h2>
-          </header>
-
-          <div class="testimonials swiper">
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/kaizenhairhtx/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/kaizenhairhtx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/kaizenhairhtx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">Minh |HTX COLOR &amp; NBR ARTIST</a> (@<a href="https://www.instagram.com/kaizenhairhtx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">kaizenhairhtx</a>) • Instagram photos and videos</p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+            <div class="testimonial-card">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>I've been told by many barbers and stylists alike that my hair is incredibly difficult to cut. Minh has always risen to the challenge and been able to deliver on a great haircut every single time. She's definitely one of the best Houston hair stylists I've ever visited!
+                </p>
+                <cite>
+                  Ryan N.
+                </cite>
+              </blockquote>
+            </div>
           </div>
-      </section>
-
-      <div class="divider-1"></div>
-      -->
-
-      <!-- CONTACT  -->
-      <section class="section" id="contact">
-        <div class="container grid">
-          <div class="text">
-            <h2 class="title">Get in touch!</h2>
-            <p>Reach out to schedule an appointment, ask questions, or provide feedback.</p>
-            <a href="https://kaizenhair.square.site" class="button" rel="noopener noreferrer" target="_blank">Make an Appointment</a>
-          </div>
-          <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i><a href="tel:8328192156"><strong>(832) 819-2156</strong></a></li>
-              <li><i class="icon-map-pin"></i>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=118+Vintage+Park+Blvd+Spring+TX+77070" rel="noopener noreferrer" target="_blank">
-                Salon Boutique<br> 
-                118 Vintage Park Blvd Ste 25<br>
-                Spring, TX 77070<br>
-                <strong>Directions ></strong></a>
-              </li>
-              <li><i class="icon-mail"></i><a href="mailto:minh@kaizenhair.com" rel="noopener noreferrer" target="_blank"><strong>minh@kaizenhair.com</strong></a></li>
-            </ul>
+          
+          <div class="testimonial-cta">
+            <p>Share your review on <a href="https://maps.app.goo.gl/mKn13ybzT4XkkHJcA?g_st=ic" rel="noopener noreferrer" target="_blank"><strong>Google</strong></a> and <a href="https://www.yelp.com/biz/kaizen-hair-studio-houston" rel="noopener noreferrer" target="_blank"><strong>Yelp</strong></a>! Check us out at <a href="https://instagram.com/kaizenhairhtx" rel="noopener noreferrer" target="_blank"><strong>kaizenhairhtx <i class="icon-instagram"></i></strong></a></p>
           </div>
         </div>
       </section>
 
-      <div class="divider-1"></div>
+      <!-- CONTACT SECTION -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-content">
+              <h2 class="section-title">Get in Touch</h2>
+              <p class="contact-description">
+                Whether you're in Houston, Cypress, or anywhere in between, reach out to schedule an appointment, ask questions, or inquire about our premium hair products.
+              </p>
+              
+              <a href="https://kaizenhair.square.site" class="button" rel="noopener noreferrer" target="_blank">Book Instantly Online</a>
+              
+              <div class="payment-methods">
+                <p class="payment-info">We accept: Visa • Mastercard • Amex • Discover • Apple Pay • Google Pay • CashApp • Afterpay</p>
+              </div>
+            </div>
+            
+            <div class="contact-info">
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <i class="icon-phone"></i>
+                  <div>
+                    <h4>Call Us</h4>
+                    <a href="tel:8328192156">(832) 819-2156</a>
+                  </div>
+                </li>
+                
+                <li class="contact-item">
+                  <i class="icon-mail"></i>
+                  <div>
+                    <h4>Email Us</h4>
+                    <a href="mailto:minh@kaizenhair.com">minh@kaizenhair.com</a>
+                  </div>
+                </li>
+                
+                <li class="contact-item">
+                  <i class="icon-map-pin"></i>
+                  <div>
+                    <h4>Our Location</h4>
+                    <address>
+                      Salon Boutique Vintage Park<br>
+                      118 Vintage Park Blvd Suite 25<br>
+                      Houston, TX 77070
+                    </address>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=118+Vintage+Park+Blvd+Spring+TX+77070" rel="noopener noreferrer" target="_blank" class="direction-link">Get Directions</a>
+                  </div>
+                </li>
+                
+                <li class="contact-item">
+                  <i class="icon-clock"></i>
+                  <div>
+                    <h4>Hours</h4>
+                    <p>
+                      Tuesday - Friday: 9:00 AM - 6:00 PM<br>
+                      Saturday: 9:00 AM - 3:00 PM<br>
+                      Sunday & Monday: Closed
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-      <!-- FOOTER  -->
-      <footer class="section">
-        <div class="container grid">
-          <div class="brand">
-            <a class="logo logo-alt" href="#home">KAIZEN <span>HAIR STUDIO</span></a>
-            <p>©2024 Minh Nguyen.</p>
-            <p>All Rights Reserved.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a class="logo" href="#home">
+              KAIZEN <span>HAIR STUDIO</span>
+            </a>
+            <p>©2024 Minh Nguyen. Premier Hair Stylist in Houston & Vintage Park.</p>
+            <p>All Rights Reserved. Goldwell | Oribe | Amika Products Available.</p>
           </div>
-          <div class="social">
-            <a href="https://instagram.com/kaizenhairhtx" rel="noopener noreferrer" target="_blank"><i class="icon-instagram"></i></a>
-            <!-- <a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a>  -->
-            <!-- <a href="https://youtube.com" target="_blank"><i class="icon-youtube"></i></a>  -->
+          
+          <div class="footer-social">
+            <a href="https://instagram.com/kaizenhairhtx" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><i class="icon-instagram"></i></a>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-      <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- Schema.org structured data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Kaizen Hair Studio",
+      "description": "Premier hair stylist in Houston offering expert cuts ($72+), balayage ($190), extensions, and color services. Book instantly online. Goldwell, Oribe, and Amika products available.",
+      "image": "./assets/img/logo.png",
+      "url": "https://kaizenhair.com",
+      "telephone": "+18328192156",
+      "email": "minh@kaizenhair.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "118 Vintage Park Blvd Suite 25",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77070",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 30.0617,
+        "longitude": -95.5464
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "18:00",
+          "description": "By appointment only"
+        }
+      ],
+      "paymentAccepted": "Credit Card, Debit Card, Apple Pay, Google Pay, CashApp, Afterpay",
+      "sameAs": "https://instagram.com/kaizenhairhtx",
+      "priceRange": "$$"
+    }
+    </script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>  
+    <script>
+      // Menu toggle functionality
+      const menuToggle = document.getElementById('menu-toggle');
+      const header = document.getElementById('header');
+      
+      menuToggle.addEventListener('click', () => {
+        header.classList.toggle('show-menu');
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          if (header.classList.contains('show-menu')) {
+            header.classList.remove('show-menu');
+          }
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Header scroll effect
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      
+      // Back to top button
+      const backToTop = document.querySelector('.back-to-top');
+      
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 500) {
+          backToTop.classList.add('show');
+        } else {
+          backToTop.classList.remove('show');
+        }
+      });
+      
+      // Initialize Swiper
+      const testimonialsSwiper = new Swiper('.testimonials-slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        }
+      });
+      
+      // ScrollReveal animations
+      ScrollReveal().reveal('.section-title', { 
+        delay: 200,
+        distance: '20px',
+        origin: 'bottom',
+        duration: 800
+      });
+      
+      ScrollReveal().reveal('.hero-content', { 
+        delay: 300,
+        distance: '30px',
+        origin: 'left',
+        duration: 1000
+      });
+      
+      ScrollReveal().reveal('.service-card, .product-card, .pricing-category', { 
+        delay: 200,
+        distance: '20px',
+        origin: 'bottom',
+        duration: 800,
+        interval: 100
+      });
+      
+      ScrollReveal().reveal('.contact-item', { 
+        delay: 300,
+        distance: '20px',
+        origin: 'right',
+        duration: 800,
+        interval: 100
+      });
+      
+      ScrollReveal().reveal('.testimonial-card', { 
+        delay: 400,
+        distance: '30px',
+        origin: 'bottom',
+        duration: 1000,
+        interval: 200
+      });
+    </script>
   </body>
 </html>
