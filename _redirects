@@ -1,0 +1,6 @@
+# Don't rewrite requests to actual files or directories
+/blog/* /blog/:splat 200
+/faq.html /faq.html 200
+
+# For any other routes, fallback to index.html
+/* /index.html 200
