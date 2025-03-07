@@ -1,6 +1,125 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-<loc>https://kaizenhairstudio.pages.dev/</loc>
-<lastmod>2024-03-01T00:23:04+00:00</lastmod>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://kaizenhair.com/</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/logo.png</image:loc>
+      <image:title>Kaizen Hair Studio Logo</image:title>
+      <image:caption>Kaizen Hair Studio in Houston's Vintage Park</image:caption>
+    </image:image>
+  </url>
+
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://kaizenhair.com/faq.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://kaizenhair.com/blog/</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/balayage-vs-highlights.jpg</image:loc>
+      <image:title>Balayage vs Highlights</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://kaizenhair.com/blog/balayage-vs-highlights.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/balayage-vs-highlights.jpg</image:loc>
+      <image:title>Balayage vs Highlights Comparison</image:title>
+      <image:caption>Professional comparison of balayage and foil highlights</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://kaizenhair.com/blog/spring-hair-trends-2025.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/spring-hair-trends.jpg</image:loc>
+      <image:title>Spring Hair Trends 2025</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://kaizenhair.com/blog/houston-hair-care-tips.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/houston-humidity-hair.jpg</image:loc>
+      <image:title>Houston Hair Care for Humidity</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://kaizenhair.com/blog/nbr-extension-guide.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/nbr-extensions.jpg</image:loc>
+      <image:title>NBR Extensions Guide</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://kaizenhair.com/blog/oribe-product-guide.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/oribe-products.jpg</image:loc>
+      <image:title>Oribe Product Guide</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog Category Pages -->
+  <url>
+    <loc>https://kaizenhair.com/blog/category/hair-color.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://kaizenhair.com/blog/category/hair-care.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://kaizenhair.com/blog/category/extensions.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://kaizenhair.com/blog/category/products.html</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

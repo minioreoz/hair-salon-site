@@ -1,4 +1,19 @@
 User-agent: *
-Disallow: 
+Allow: /
 Disallow: /cgi-bin/
-Sitemap: https://kaizenhairstudio.pages.dev/sitemap.xml
+Disallow: /tmp/
+
+Sitemap: https://kaizenhair.com/sitemap.xml
+
+Crawl-delay: 10
+
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

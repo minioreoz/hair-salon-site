@@ -64,3 +64,9 @@
 .icon-youtube:before {
   content: "\e90b";
 }
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}
