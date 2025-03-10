@@ -1,6 +1,0 @@
-# Preserve specific HTML files
-/faq.html /faq.html 200
-/blog/*.html /blog/:splat 200
-
-# Handle all other routes
-/* /index.html 200
