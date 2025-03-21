@@ -8,7 +8,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://kaizenhair.com/</loc>
-    <lastmod>2025-03-06</lastmod>
+    <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -28,13 +28,39 @@
 
   <!-- Blog Pages -->
   <url>
-    <loc>https://kaizenhair.com/blog/</loc>
-    <lastmod>2025-03-06</lastmod>
+    <loc>https://kaizenhair.com/blog/index.html</loc>
+    <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://kaizenhair.com/assets/img/blog/balayage-vs-highlights.jpg</image:loc>
-      <image:title>Balayage vs Highlights</image:title>
+      <image:loc>https://kaizenhair.com/assets/img/blog/blonding-guide.jpg</image:loc>
+      <image:title>The Complete Guide to Blonding</image:title>
+    </image:image>
+  </url>
+
+  <!-- New Blonding Guide Blog Post -->
+  <url>
+    <loc>https://kaizenhair.com/blog/blonding-guide.html</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/blonding-guide.jpg</image:loc>
+      <image:title>The Complete Guide to Blonding</image:title>
+      <image:caption>Comprehensive guide to blonde hair techniques and maintenance</image:caption>
+    </image:image>
+  </url>
+
+  <!-- New Kerasilk Guide Blog Post -->
+  <url>
+    <loc>https://kaizenhair.com/blog/kerasilk-product-guide.html</loc>
+    <lastmod>2025-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/kerasilk-products.jpg</image:loc>
+      <image:title>Kerasilk Product Guide</image:title>
+      <image:caption>Ultimate guide to Goldwell's premium Kerasilk hair care line</image:caption>
     </image:image>
   </url>
 
@@ -97,7 +123,7 @@
   <!-- Blog Category Pages -->
   <url>
     <loc>https://kaizenhair.com/blog/category/hair-color.html</loc>
-    <lastmod>2025-03-06</lastmod>
+    <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -118,7 +144,7 @@
 
   <url>
     <loc>https://kaizenhair.com/blog/category/products.html</loc>
-    <lastmod>2025-03-06</lastmod>
+    <lastmod>2025-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

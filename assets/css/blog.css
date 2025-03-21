@@ -937,7 +937,7 @@
   /* Additional responsive adjustments for header navigation */
   @media (max-width: 991px) {
     .main-nav .menu li a[href="/faq.html"],
-    .main-nav .menu li a[href="/blog/"] {
+    .main-nav .menu li a[href="/blog/index.html"] {
       display: block;
     }
   }
