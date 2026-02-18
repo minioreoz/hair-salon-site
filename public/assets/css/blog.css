@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
-  min-height: 92vh;
+  min-height: 72vh;
   display: flex;
   align-items: center;
 }
@@ -94,36 +94,47 @@
   border-color: #b5ae98;
 }
 
+.blog-featured-strip {
+  background: #fff;
+  border-bottom: 1px solid #ede9e3;
+  padding: 2rem 0;
+}
+
 .blog-header-featured {
-  border-top: 1px solid rgba(181, 174, 152, 0.25);
-  padding-top: 2rem;
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .blog-header-featured .post-category {
   display: inline-block;
-  background-color: rgba(181, 174, 152, 0.2);
-  color: #b5ae98;
-  border: 1px solid rgba(181, 174, 152, 0.4);
+  background-color: #f5f0ea;
+  color: #8c846f;
+  border: 1px solid #ddd8ce;
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 0.3rem 0.9rem;
   border-radius: 999px;
-  margin-bottom: 0.9rem;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.blog-featured-strip .blog-header-featured-body {
+  flex: 1;
+  min-width: 200px;
 }
 
 .blog-header-featured-title {
-  display: block;
   font-family: 'Forum', serif;
-  font-size: 1.75rem;
-  color: #ffffff;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  color: #2a2825;
+  line-height: 1.3;
   text-decoration: none;
+  display: block;
+  margin-bottom: 0.4rem;
   transition: color 0.2s ease;
 }
 
@@ -132,14 +143,16 @@
 }
 
 .blog-header-featured p {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 1.2rem;
-  max-width: 100%;
+  font-size: 0.92rem;
+  color: #6c584c;
+  margin: 0;
+  line-height: 1.6;
 }
 
 .blog-header-featured .button {
   display: inline-flex;
+  white-space: nowrap;
+  align-self: center;
 }
   
   /* Featured post styling */
@@ -853,13 +866,14 @@
     }
 
     .blog-header-featured {
-      text-align: center;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
     }
 
     .blog-header-featured-title {
-      font-size: 1.4rem;
-    }
-    
+      font-size: 1.1rem;
+    }    
     .blog-post-header h1 {
       font-size: 2rem;
     }
