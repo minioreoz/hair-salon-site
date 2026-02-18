@@ -1337,108 +1337,7 @@ strong {
   margin-bottom: 0;
 }
 
-/*======= SERVICES SECTION ===================*/
-.services {
-  background-color: var(--background-alt);
-  position: relative;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-md);
-  margin-bottom: var(--space-lg);
-}
-
-.service-card {
-  background-color: white;
-  padding: var(--space-md) var(--space-md) var(--space-md);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  transition: all var(--transition-normal);
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  position: relative;
-  overflow: hidden;
-}
-
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--gradient-primary);
-  opacity: 0;
-  transition: opacity var(--transition-normal);
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-}
-
-.service-card:hover::before {
-  opacity: 1;
-}
-
-.service-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  background: var(--gradient-hero);
-  border-radius: var(--radius-md);
-  margin-bottom: var(--space-sm);
-  transition: all var(--transition-normal);
-}
-
-.service-card:hover .service-icon {
-  background: var(--gradient-primary);
-}
-
-.service-card:hover .service-icon i {
-  color: white;
-}
-
-.service-icon i {
-  font-size: 1.8rem;
-  color: var(--primary-color);
-  transition: color var(--transition-normal);
-}
-
-.service-title {
-  margin-bottom: var(--space-sm);
-  color: var(--title-color);
-}
-
-.service-description {
-  margin-bottom: var(--space-sm);
-}
-
-.service-list {
-  list-style: disc;
-  padding-left: var(--space-md);
-  margin-bottom: 0;
-}
-
-.service-list li {
-  margin-bottom: 0.5rem;
-}
-
-.service-list li:last-child {
-  margin-bottom: 0;
-}
-
-.service-cta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-  justify-content: center;
-}
-
-/*======= PRICING SECTION ===================*/
+/*======= PRICING / SERVICES SECTION ===================*/
 .pricing {
   background-color: white;
 }
@@ -2133,14 +2032,9 @@ strong {
     font-size: 1.05rem;
   }
   
-  .services-grid,
   .products-grid,
   .pricing-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .service-cta {
-    flex-direction: column;
   }
   
   .section-title {
