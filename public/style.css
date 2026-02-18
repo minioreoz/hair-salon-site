@@ -595,7 +595,8 @@ strong {
 /* Staggered entrance animations */
 .hero-tagline {
   opacity: 0;
-  animation: heroSlideUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
+  animation: heroSlideUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+  animation-fill-mode: forwards;
 }
 
 .hero-title {
@@ -847,47 +848,77 @@ strong {
   transform: scale(1.02);
 }
 
-/* Hero responsive */
+/* Hero responsive — tablet */
 @media (max-width: 991px) {
   .hero {
-    padding-top: 140px;
+    padding-top: 120px;
     padding-bottom: var(--space-lg);
   }
 
   .hero-content {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: left;
+    gap: 0;
   }
 
   .hero-title {
-    font-size: 3rem;
-  }
-
-  .hero-title-accent {
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 2.75rem;
+    margin-bottom: var(--space-sm);
   }
 
   .hero-subtitle {
-    font-size: 1.05rem;
+    font-size: 0.98rem;
+    margin-bottom: var(--space-sm);
+    line-height: 1.7;
   }
 
   .hero-description {
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 0.95rem;
+    max-width: 460px;
+    margin-bottom: 0.35rem;
+  }
+
+  .hero-note {
+    font-size: 0.82rem;
+    margin-bottom: 1.25rem;
   }
 
   .hero-ctas {
-    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
   }
 
-  .hero-trust {
-    justify-content: center;
+  .hero-ctas .button:first-child {
+    box-shadow: 0 6px 20px rgba(181, 174, 152, 0.35);
   }
 
-  .image-container {
-    max-width: 250px;
-    margin-top: var(--space-md);
+  /* Hide the standalone image — logo becomes section background */
+  .hero-image {
+    display: none;
+  }
+
+  /* Logo as faded background watermark */
+  .hero .container {
+    position: relative;
+  }
+
+  .hero .container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1rem;
+    transform: translateY(-50%);
+    width: 320px;
+    height: 320px;
+    background: url('/assets/img/logo.png') center / contain no-repeat;
+    opacity: 0.13;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .hero-text {
+    position: relative;
+    z-index: 1;
   }
 
   .image-container::before,
@@ -901,26 +932,80 @@ strong {
   }
 }
 
+/* Hero responsive — mobile */
 @media (max-width: 480px) {
   .hero {
-    padding-top: 120px;
+    padding-top: 100px;
+    padding-bottom: var(--space-sm);
+  }
+
+  .hero-tagline {
+    font-size: 0.68rem;
+    padding: 0.35rem 0.85rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.65rem;
   }
 
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 0.6rem;
+  }
+
+  .hero-title-accent {
+    width: 50px;
+    margin-top: 0.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 0.65rem;
+    line-height: 1.6;
+  }
+
+  .hero-description {
+    font-size: 0.88rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.6;
+  }
+
+  .hero-note {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
   }
 
   .hero-ctas {
     flex-direction: column;
+    margin-bottom: 1rem;
   }
 
   .hero-ctas .button {
     width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
   }
 
   .hero-trust {
-    flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.5rem;
+  }
+
+  .hero-trust-stars .star {
+    font-size: 0.9rem;
+  }
+
+  .hero-trust-text {
+    font-size: 0.78rem;
+  }
+
+  /* Shift background logo lower-right on small screens */
+  .hero .container::before {
+    width: 260px;
+    height: 260px;
+    right: -2rem;
+    top: auto;
+    bottom: -2rem;
+    transform: none;
+    opacity: 0.1;
   }
 }
 
