@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>404 - Page Not Found | Kaizen Hair Studio</title>
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         @font-face {
           font-family: 'icomoon';
@@ -12,7 +15,7 @@
           src:  url('/assets/fonts/icomoon.eot?m1tf43#iefix') format('embedded-opentype'),
             url('/assets/fonts/icomoon.ttf?m1tf43') format('truetype'),
             url('/assets/fonts/icomoon.woff?m1tf43') format('woff'),
-            url('/assetsfonts/icomoon.svg?m1tf43#icomoon') format('svg');
+            url('/assets/fonts/icomoon.svg?m1tf43#icomoon') format('svg');
           font-weight: normal;
           font-style: normal;
           font-display: block;
@@ -80,7 +83,7 @@
         }
 
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'DM Sans', sans-serif;
             background-color: #fff;
             color: #333;
             margin: 0;
@@ -102,7 +105,7 @@
         h1 {
             font-size: 3.5rem;
             margin-bottom: 1.5rem;
-            color: #d4a35a;
+            color: #b5ae98;
             font-weight: 600;
         }
         p {
@@ -113,7 +116,7 @@
         }
         .btn {
             display: inline-block;
-            background-color: #d4a35a;
+            background-color: #b5ae98;
             color: white;
             padding: 0.8rem 1.8rem;
             text-decoration: none;
@@ -126,7 +129,7 @@
             font-size: 0.9rem;
         }
         .btn:hover {
-            background-color: #c08c3f;
+            background-color: #9e9880;
             transform: translateY(-2px);
         }
         .links {
@@ -149,11 +152,11 @@
             height: 1px;
             bottom: -2px;
             left: 0;
-            background-color: #d4a35a;
+            background-color: #b5ae98;
             transition: width 0.3s;
         }
         .links a:hover {
-            color: #d4a35a;
+            color: #b5ae98;
         }
         .links a:hover:after {
             width: 100%;
@@ -168,7 +171,13 @@
             transition: color 0.3s;
         }
         .social-icons a:hover {
-            color: #d4a35a;
+            color: #b5ae98;
+        }
+
+        @media (max-width: 640px) {
+            .container { margin: 1rem; padding: 1.5rem; }
+            h1 { font-size: 2.5rem; }
+            .links { flex-direction: column; gap: 0.75rem; }
         }
     </style>
 </head>
@@ -180,14 +189,14 @@
         <a href="/" class="btn">Return to Homepage</a>
         
         <div class="links">
-            <a href="/blog">Our Blog</a>
+            <a href="/blog/index.html">Our Blog</a>
             <a href="/faq.html">FAQ</a>
         </div>
         
         <div class="social-icons">
-            <a href="#" class="icon-instagram"></a>
-            <a href="#" class="icon-facebook"></a>
-            <a href="#" class="icon-whatsapp"></a>
+            <a href="https://www.instagram.com/kaizenhairhtx" aria-label="Instagram" class="icon-instagram"></a>
+            <a href="https://www.facebook.com/kaizenhairhtx" aria-label="Facebook" class="icon-facebook"></a>
+            <a href="https://wa.me/18329098395" aria-label="WhatsApp" class="icon-whatsapp"></a>
         </div>
     </div>
 </body>

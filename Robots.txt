@@ -5,7 +5,7 @@ Disallow: /tmp/
 
 Sitemap: https://kaizenhair.com/sitemap.xml
 
-Crawl-delay: 10
+Crawl-delay: 1
 
 User-agent: Googlebot
 Allow: /

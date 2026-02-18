@@ -67,7 +67,7 @@ button {
   --primary-dark: #8c846f;
   --secondary-color: #37352f;
   --text-color: #555;
-  --text-muted: #888;
+  --text-muted: #666;
   --title-color: #2a2825;
   --background-color: #fff;
   --background-alt: #f9f8f5;
@@ -583,7 +583,7 @@ strong {
   }
   
   .show-menu .main-nav .menu {
-    height: calc(100vh - 80px);
+    height: calc(100dvh - 80px);
     opacity: 1;
     visibility: visible;
     padding: var(--space-lg) 0;
@@ -1891,7 +1891,7 @@ strong {
 }
 
 .footer-brand p {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 0.5rem;
   font-size: 0.88rem;
   line-height: 1.6;
@@ -2133,7 +2133,7 @@ strong {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--space-md);
   margin-bottom: var(--space-lg);
 }
