@@ -1001,6 +1001,7 @@ strong {
   .hero {
     padding-top: 120px;
     padding-bottom: var(--space-lg);
+    min-height: auto;
   }
 
   .hero-content {
@@ -1084,7 +1085,7 @@ strong {
 /* Hero responsive — mobile */
 @media (max-width: 480px) {
   .hero {
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: var(--space-sm);
   }
 
