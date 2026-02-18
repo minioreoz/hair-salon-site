@@ -646,9 +646,13 @@ strong {
 .hero {
   padding-top: 160px;
   padding-bottom: var(--space-xl);
-  background:var(--gradient-hero);
+  background: var(--gradient-hero);
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero::before {
