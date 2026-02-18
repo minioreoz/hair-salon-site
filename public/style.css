@@ -1776,100 +1776,68 @@ picture {
   }
 }
 
-/* Instagram Banner Section */
+/* Instagram Gallery Section */
 .instagram-section {
   background-color: var(--background-alt);
   padding: var(--space-xl) 0;
 }
 
-.instagram-banner {
-  background: var(--gradient-dark);
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  position: relative;
-}
-
-.instagram-banner::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(181, 174, 152, 0.15) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.instagram-banner::after {
-  content: '';
-  position: absolute;
-  bottom: -40%;
-  left: -10%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(196, 168, 130, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.instagram-banner-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: var(--space-xl) var(--space-lg);
-}
-
-.instagram-large-icon {
-  font-size: 3rem;
-  color: rgba(255, 255, 255, 0.3);
-  margin-bottom: var(--space-sm);
-  display: block;
-}
-
-.instagram-banner-content .section-title {
-  color: white;
-  font-family: 'Forum', serif;
-  font-size: 2.5rem;
-}
-
-.instagram-banner-content .section-title::after {
-  background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(181, 174, 152, 0.8));
-  margin: var(--space-sm) auto 0;
-}
-
-.instagram-banner-content .section-subtitle {
-  color: rgba(255, 255, 255, 0.7);
-  max-width: 500px;
   margin-bottom: var(--space-md);
 }
 
-.instagram-banner-content .button {
-  background: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+.instagram-grid-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  display: block;
 }
 
-.instagram-banner-content .button::before {
-  background: rgba(255, 255, 255, 0.25);
+.instagram-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-.instagram-banner-content .button:hover {
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+.instagram-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(60, 56, 46, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .instagram-banner-content {
-    padding: var(--space-lg) var(--space-md);
-  }
-  
-  .instagram-banner-content .section-title {
-    font-size: 1.8rem;
-  }
-  
-  .instagram-large-icon {
-    font-size: 2.2rem;
+.instagram-grid-overlay i {
+  font-size: 2rem;
+  color: white;
+}
+
+.instagram-grid-item:hover img {
+  transform: scale(1.06);
+}
+
+.instagram-grid-item:hover .instagram-grid-overlay {
+  opacity: 1;
+}
+
+.instagram-cta {
+  text-align: center;
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 576px) {
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
   }
 }
