@@ -38,7 +38,46 @@
     </image:image>
   </url>
 
-  <!-- New Blonding Guide Blog Post -->
+  <!-- Hair Color for Skin Tone Blog Post -->
+  <url>
+    <loc>https://kaizenhair.com/blog/hair-color-for-skin-tone.html</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/hair-color-skin-tone.jpg</image:loc>
+      <image:title>Hair Color for Your Skin Tone Guide</image:title>
+      <image:caption>Complete guide to choosing the most flattering hair color for your skin undertone</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Best Haircut for Face Shape Blog Post -->
+  <url>
+    <loc>https://kaizenhair.com/blog/best-haircut-for-face-shape.html</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/best-haircut-face-shape.jpg</image:loc>
+      <image:title>Best Haircut for Your Face Shape</image:title>
+      <image:caption>Complete guide to finding the most flattering haircut for your face shape</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Color Maintenance Guide Blog Post -->
+  <url>
+    <loc>https://kaizenhair.com/blog/color-maintenance-guide.html</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://kaizenhair.com/assets/img/blog/color-maintenance-guide.jpg</image:loc>
+      <image:title>Hair Color Maintenance Guide</image:title>
+      <image:caption>Complete guide to maintaining vibrant hair color between salon visits</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blonding Guide Blog Post -->
   <url>
     <loc>https://kaizenhair.com/blog/blonding-guide.html</loc>
     <lastmod>2026-02-18</lastmod>
