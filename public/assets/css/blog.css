@@ -1,27 +1,150 @@
 /* Base styles for blog pages */
 .blog-header {
-    background-color: #f8f4f0;
-    padding: 6rem 0 4rem;
-    text-align: center;
-  }
-  
-  .blog-header h1 {
-    font-family: 'Forum', serif;
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    color: #362617;
-  }
-  
-  .blog-header p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #6c584c;
-  }
+  position: relative;
+  padding: 6rem 0 4rem;
+  text-align: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+}
+
+.blog-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 27, 24, 0.72) 0%,
+    rgba(30, 27, 24, 0.55) 50%,
+    rgba(30, 27, 24, 0.78) 100%
+  );
+  pointer-events: none;
+}
+
+.blog-header .container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.blog-header-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.blog-header-eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b5ae98;
+  margin-bottom: 1.2rem;
+}
+
+.blog-header h1 {
+  font-family: 'Forum', serif;
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.blog-header-divider {
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, #b5ae98, #c4a882);
+  margin: 1.4rem auto;
+  border-radius: 2px;
+}
+
+.blog-header p {
+  font-size: 1.1rem;
+  max-width: 520px;
+  margin: 0 auto 1.6rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
+}
+
+.blog-header-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.blog-header-tags span {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(181, 174, 152, 0.3);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.blog-header-tags span:hover {
+  color: #b5ae98;
+  border-color: #b5ae98;
+}
+
+.blog-header-featured {
+  border-top: 1px solid rgba(181, 174, 152, 0.25);
+  padding-top: 2rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-header-featured .post-category {
+  display: inline-block;
+  background-color: rgba(181, 174, 152, 0.2);
+  color: #b5ae98;
+  border: 1px solid rgba(181, 174, 152, 0.4);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 0.9rem;
+}
+
+.blog-header-featured-title {
+  display: block;
+  font-family: 'Forum', serif;
+  font-size: 1.75rem;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.blog-header-featured-title:hover {
+  color: #b5ae98;
+}
+
+.blog-header-featured p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.2rem;
+  max-width: 100%;
+}
+
+.blog-header-featured .button {
+  display: inline-flex;
+}
   
   /* Featured post styling */
   .featured-post {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
     background-color: #fff;
   }
   
@@ -35,13 +158,18 @@
   .featured-post-image {
     flex: 1;
     max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
   }
   
   .featured-post-image img {
     width: 100%;
-    height: auto;
+    height: 420px;
+    object-fit: cover;
+    object-position: center top;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: block;
   }
   
   .featured-post-text {
@@ -716,7 +844,20 @@
   
   @media (max-width: 768px) {
     .blog-header h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
+    }
+
+    .blog-header {
+      padding: 5rem 0 3rem;
+      min-height: 100svh;
+    }
+
+    .blog-header-featured {
+      text-align: center;
+    }
+
+    .blog-header-featured-title {
+      font-size: 1.4rem;
     }
     
     .blog-post-header h1 {
