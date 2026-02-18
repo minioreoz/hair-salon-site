@@ -53,7 +53,7 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
   <!-- STYLES -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/assets/fonts/style.css" />
 
   <!-- CANONICAL URL -->
@@ -114,10 +114,11 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
+            <p class="hero-tagline">Welcome to Kaizen Hair Studio</p>
             <h1 class="hero-title">Houston's<br>Premier Hair<br>Stylist</h1>
             <h2 class="hero-subtitle">
-              Book Instantly Online •<br>
-              Balayage from $220 • Haircuts from $72
+              Book Instantly Online &bull;<br>
+              Balayage from $220 &bull; Haircuts from $72
             </h2>
 
             <p class="hero-description">
@@ -127,8 +128,8 @@
             </p>
             <p>Visits are by appointment only.</p>
 
-            <a href="https://kaizenhair.square.site" class="button" rel="noopener noreferrer" target="_blank">Book
-              Instantly Online</a>
+            <a href="https://kaizenhair.square.site" class="button" rel="noopener noreferrer" target="_blank"><span>Book
+              Instantly Online</span></a>
           </div>
 
           <div class="hero-image">
@@ -532,69 +533,29 @@
               target="_blank"><strong>Google</strong></a> and <a
               href="https://www.yelp.com/biz/kaizen-hair-studio-houston" rel="noopener noreferrer"
               target="_blank"><strong>Yelp</strong></a>! Check us out at <a href="https://instagram.com/kaizenhairhtx"
-              rel="noopener noreferrer" target="_blank"><strong>kaizenhairhtx <i
+              rel="noopener noreferrer" target="_blank"><strong>@kaizenhairhtx <i
                   class="icon-instagram"></i></strong></a></p>
         </div>
       </div>
     </section>
 
-    <!-- INSTAGRAM GALLERY SECTION -->
-    <section class="section instagram-gallery" id="instagram">
+    <!-- INSTAGRAM SECTION -->
+    <section class="section instagram-section" id="instagram">
       <div class="container">
-        <header class="section-header">
-          <h2 class="section-title">Our Instagram Gallery</h2>
-          <p class="section-subtitle">
-            Follow us on Instagram <a href="https://instagram.com/kaizenhairhtx" rel="noopener noreferrer"
-              target="_blank"><strong>@kaizenhairhtx</strong></a> for the latest hair inspiration and salon updates
-          </p>
-        </header>
-
-        <div id="instafeed" class="instagram-feed">
-          <!-- Instagram photos will be loaded here by Instafeed.js -->
-          <div class="loading-spinner">
-            <div class="spinner"></div>
+        <div class="instagram-banner">
+          <div class="instagram-banner-content">
+            <i class="icon-instagram instagram-large-icon"></i>
+            <h2 class="section-title">Follow Our Journey</h2>
+            <p class="section-subtitle">
+              See the latest hair transformations, styling tips, and behind-the-scenes moments on our Instagram
+            </p>
+            <a href="https://instagram.com/kaizenhairhtx" class="button" rel="noopener noreferrer" target="_blank">
+              <span><i class="icon-instagram"></i> &nbsp;Follow @kaizenhairhtx</span>
+            </a>
           </div>
-        </div>
-
-        <div class="instagram-cta">
-          <a href="https://instagram.com/kaizenhairhtx" class="button button-outline" rel="noopener noreferrer"
-            target="_blank">
-            <i class="icon-instagram"></i> Follow Us on Instagram
-          </a>
         </div>
       </div>
     </section>
-
-    <!-- Add Instafeed.js before the closing body tag -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/2.0.0/instafeed.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Only initialize the feed if the Instafeed library is loaded
-        if (window.Instafeed) {
-          const feed = new Instafeed({
-            accessToken: 'YOUR_INSTAGRAM_ACCESS_TOKEN',
-            limit: 8,
-            template: '<div class="instagram-item"><a href="{{link}}" target="_blank" rel="noopener noreferrer"><div class="instagram-image"><img src="{{image}}" alt="{{caption}}" loading="lazy"></div><div class="instagram-overlay"><div class="instagram-caption">{{caption}}</div></div></a></div>',
-            after: function () {
-              // Remove loading spinner after images are loaded
-              const loadingSpinner = document.querySelector('.loading-spinner');
-              if (loadingSpinner) {
-                loadingSpinner.remove();
-              }
-            },
-            error: function () {
-              document.getElementById('instafeed').innerHTML = `<div class="instagram-error">Unable to load Instagram photos. Please visit our <a href="https://instagram.com/kaizenhairhtx" target="_blank">Instagram page</a>.</div>`;
-            }
-          });
-
-          // Run the feed
-          feed.run();
-        } else {
-          console.error('Instafeed.js library not loaded');
-          document.getElementById('instafeed').innerHTML = `<div class="instagram-error">Unable to load Instagram photos. Please visit our <a href="https://instagram.com/kaizenhairhtx" target="_blank">Instagram page</a>.</div>`;
-        }
-      });
-    </script>
 
     <!-- RECENT BLOG POSTS SECTION -->
     <section class="section recent-posts" id="blog-preview">
@@ -775,8 +736,8 @@
           <a class="logo" href="#home">
             KAIZEN <span>HAIR STUDIO</span>
           </a>
-          <p>©2025 Minh Nguyen. Premier Hair Stylist in Houston & Vintage Park.</p>
-          <p>All Rights Reserved. Goldwell | Oribe | Amika | Kerasilk Products Available.</p>
+          <p>&copy;2025 Minh Nguyen. Premier Hair Stylist in Houston &amp; Vintage Park.</p>
+          <p>All Rights Reserved. Goldwell &bull; Oribe &bull; Amika &bull; Kerasilk Products Available.</p>
         </div>
 
         <div class="footer-locations">
