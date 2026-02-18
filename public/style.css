@@ -193,21 +193,12 @@ strong {
 }
 
 .button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
-  opacity: 0;
-  transition: opacity var(--transition-normal);
-  border-radius: inherit;
-  z-index: 0;
+  display: none;
 }
 
 .button:hover {
   color: white;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
   transform: translateY(-3px);
   box-shadow: var(--shadow-glow);
 }
@@ -229,16 +220,13 @@ strong {
 }
 
 .button-outline::before {
-  background: var(--gradient-primary);
+  display: none;
 }
 
 .button-outline:hover {
+  background: var(--gradient-primary);
   color: white;
   border-color: transparent;
-}
-
-.button-outline:hover::before {
-  opacity: 1;
 }
 
 .text-link {
@@ -1197,6 +1185,20 @@ strong {
 
 .contact-item i {
   font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-top: 0.3rem;
+  background: var(--gradient-hero);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.contact-icon-svg {
+  font-style: normal;
   color: var(--primary-color);
   margin-top: 0.3rem;
   background: var(--gradient-hero);
