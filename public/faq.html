@@ -53,7 +53,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&family=Forum&family=Bricolage+Grotesque:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Forum&display=swap"
     rel="stylesheet" />
 
   <!-- GOOGLE TAG (gtag.js) -->
@@ -67,6 +67,7 @@
 </head>
 
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
   <header id="header" class="modern-header">
     <div class="container">
       <div class="header-content">
@@ -84,7 +85,7 @@
             <li><a href="/#contact">Contact</a></li>
             <li class="nav-book"><a href="https://kaizenhair.square.site" class="nav-book-btn" rel="noopener noreferrer" target="_blank">Book Now</a></li>
           </ul>
-          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
             <span class="hamburger"></span>
           </button>
         </nav>
@@ -92,7 +93,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <!-- PAGE HEADER -->
     <section class="page-header">
       <div class="container">
@@ -106,98 +107,168 @@
       <div class="container">
         <div class="faq-grid">
           <div class="faq-item">
-            <h2>What services does your hair stylist in Houston offer?</h2>
-            <p>Our Houston hair stylist offers a comprehensive range of services including precision cuts (starting at
-              $72 for women, $60 for men), color services (balayage starting at $220, highlights at $180), NBR
-              extensions, smoothing treatments ($250), and specialty styling. All services include a consultation to
-              ensure we meet your specific needs.</p>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                What services does your hair stylist in Houston offer?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-1" role="region">
+              <p>Our Houston hair stylist offers a comprehensive range of services including precision cuts (starting at
+                $72 for women, $60 for men), color services (balayage starting at $220, highlights at $180), NBR
+                extensions, smoothing treatments ($250), and specialty styling. All services include a consultation to
+                ensure we meet your specific needs.</p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h2>How does instant online booking work?</h2>
-            <p>Our Square appointment system allows you to book services instantly online and receive quick
-              confirmation. Simply visit our <a href="https://kaizenhair.square.site" rel="noopener noreferrer"
-                target="_blank">booking page</a>, select your desired service, choose an available time slot, and
-              complete your booking. You'll receive immediate confirmation and reminders before your appointment.</p>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                How does instant online booking work?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-2" role="region">
+              <p>Our Square appointment system allows you to book services instantly online and receive quick
+                confirmation. Simply visit our <a href="https://kaizenhair.square.site" rel="noopener noreferrer"
+                  target="_blank">booking page</a>, select your desired service, choose an available time slot, and
+                complete your booking. You'll receive immediate confirmation and reminders before your appointment.</p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h2>What are NBR extensions and how do they differ from other extensions?</h2>
-            <p>Natural Beaded Rows (NBR) extensions are a premium extension method that uses beading and hand-stitching
-              techniques to attach hair extensions. Unlike tape or glue extensions, NBR causes minimal damage, allows
-              for natural movement, and creates a seamless, comfortable result. They're ideal for adding both length and
-              volume and can last longer between maintenance appointments.</p>
-            <p>We recommend scheduling a consultation first to determine if NBR extensions are right for your hair type
-              and goals.</p>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                What are NBR extensions and how do they differ from other extensions?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-3" role="region">
+              <p>Natural Beaded Rows (NBR) extensions are a premium extension method that uses beading and hand-stitching
+                techniques to attach hair extensions. Unlike tape or glue extensions, NBR causes minimal damage, allows
+                for natural movement, and creates a seamless, comfortable result. They're ideal for adding both length and
+                volume and can last longer between maintenance appointments.</p>
+              <p>We recommend scheduling a consultation first to determine if NBR extensions are right for your hair type
+                and goals.</p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h2>What payment methods do you accept?</h2>
-            <p>We accept a wide range of payment methods for maximum convenience: Credit Card, Debit Card, and Apple Pay
-              for flexible payment options. Our Square payment system ensures secure, convenient transactions with
-              digital receipts available.</p>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                What payment methods do you accept?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-4" role="region">
+              <p>We accept a wide range of payment methods for maximum convenience: Credit Card, Debit Card, and Apple Pay
+                for flexible payment options. Our Square payment system ensures secure, convenient transactions with
+                digital receipts available.</p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h2>What makes Kaizen Hair Studio different from other hair salons in Houston?</h2>
-            <p>Our approach combines technical excellence with artistic vision. As a Goldwell Master Colorist and NBR
-              Extension Specialist, Minh brings specialized training and expertise to every service. We also offer:</p>
-            <ul>
-              <li>Instant online booking to receive quick confirmation</li>
-              <li>Transparent pricing with no hidden fees</li>
-              <li>Premium product lines including Goldwell, Oribe, and Kerasilk</li>
-              <li>Convenient location in Vintage Park Houston</li>
-              <li>Personalized approach to each client's unique hair needs</li>
-            </ul>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                What makes Kaizen Hair Studio different from other hair salons in Houston?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-5" role="region">
+              <p>Our approach combines technical excellence with artistic vision. As a Goldwell Master Colorist and NBR
+                Extension Specialist, Minh brings specialized training and expertise to every service. We also offer:</p>
+              <ul>
+                <li>Instant online booking to receive quick confirmation</li>
+                <li>Transparent pricing with no hidden fees</li>
+                <li>Premium product lines including Goldwell, Oribe, and Kerasilk</li>
+                <li>Convenient location in Vintage Park Houston</li>
+                <li>Personalized approach to each client's unique hair needs</li>
+              </ul>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h2>How long does a balayage service take?</h2>
-            <p>A typical balayage service takes approximately 3 hours. This includes consultation, application,
-              processing time, shampooing, toning, and styling. For first-time balayage clients or color corrections,
-              the appointment may take longer. We recommend booking a consultation first if you're unsure.</p>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                How long does a balayage service take?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-6" role="region">
+              <p>A typical balayage service takes approximately 3 hours. This includes consultation, application,
+                processing time, shampooing, toning, and styling. For first-time balayage clients or color corrections,
+                the appointment may take longer. We recommend booking a consultation first if you're unsure.</p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h2>Where is Kaizen Hair Studio located?</h2>
-            <p>Kaizen Hair Studio is located in the Vintage Park shopping center in Northwest Houston, serving clients
-              from throughout the Houston metropolitan area including Cypress, Spring, The Woodlands, Champions,
-              Willowbrook, and surrounding communities.</p>
-            <p>We are located inside the Salon Boutique building. Our address is:</p>
-            <address>
-              Salon Boutique Vintage Park<br>
-              118 Vintage Park Blvd Suite 25<br>
-              Houston, TX 77070
-            </address>
-            <p><a href="https://www.google.com/maps/dir/?api=1&destination=118+Vintage+Park+Blvd+Spring+TX+77070"
-                rel="noopener noreferrer" target="_blank" class="direction-link">Get Directions</a></p>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+                Where is Kaizen Hair Studio located?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-7" role="region">
+              <p>Kaizen Hair Studio is located in the Vintage Park shopping center in Northwest Houston, serving clients
+                from throughout the Houston metropolitan area including Cypress, Spring, The Woodlands, Champions,
+                Willowbrook, and surrounding communities.</p>
+              <p>We are located inside the Salon Boutique building. Our address is:</p>
+              <address>
+                Salon Boutique Vintage Park<br>
+                118 Vintage Park Blvd Suite 25<br>
+                Houston, TX 77070
+              </address>
+              <p><a href="https://www.google.com/maps/dir/?api=1&destination=118+Vintage+Park+Blvd+Spring+TX+77070"
+                  rel="noopener noreferrer" target="_blank" class="direction-link">Get Directions</a></p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h2>Do you sell professional hair products?</h2>
-            <p>Yes, we offer a curated selection of premium hair care products from trusted brands including:</p>
-            <ul>
-              <li><strong>Goldwell</strong> - Professional color care and styling products</li>
-              <li><strong>Oribe</strong> - Luxury hair care and styling solutions</li>
-              <li><strong>Kerasilk</strong> - High-performance, cruelty-free products</li>
-            </ul>
-            <p>Products are available for purchase in-salon. We can recommend specific products tailored to your hair
-              type and concerns during your appointment.</p>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+                Do you sell professional hair products?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-8" role="region">
+              <p>Yes, we offer a curated selection of premium hair care products from trusted brands including:</p>
+              <ul>
+                <li><strong>Goldwell</strong> - Professional color care and styling products</li>
+                <li><strong>Oribe</strong> - Luxury hair care and styling solutions</li>
+                <li><strong>Kerasilk</strong> - High-performance, cruelty-free products</li>
+              </ul>
+              <p>Products are available for purchase in-salon. We can recommend specific products tailored to your hair
+                type and concerns during your appointment.</p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h2>How far in advance should I book an appointment?</h2>
-            <p>For color services and extensions, we recommend booking 2-3 weeks in advance, especially if you prefer
-              weekend appointments. For haircuts, 1-2 weeks notice is usually sufficient. Last-minute openings
-              occasionally become available, so check our <a href="https://kaizenhair.square.site"
-                rel="noopener noreferrer" target="_blank">online booking system</a> for current availability.</p>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-9">
+                How far in advance should I book an appointment?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-9" role="region">
+              <p>For color services and extensions, we recommend booking 2-3 weeks in advance, especially if you prefer
+                weekend appointments. For haircuts, 1-2 weeks notice is usually sufficient. Last-minute openings
+                occasionally become available, so check our <a href="https://kaizenhair.square.site"
+                  rel="noopener noreferrer" target="_blank">online booking system</a> for current availability.</p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h2>What should I do if I need to cancel or reschedule my appointment?</h2>
-            <p>We understand that schedules change. Please provide at least 24 hours notice for cancellations or
-              rescheduling to avoid a <b>$50 cancellation fee</b>. You can easily modify your appointment through your booking
-              confirmation email/text or by calling us at <a href="tel:8328192156">(832) 819-2156</a>.</p>
+            <h2>
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-10">
+                What should I do if I need to cancel or reschedule my appointment?
+                <span class="faq-toggle-icon">+</span>
+              </button>
+            </h2>
+            <div class="faq-answer" id="faq-answer-10" role="region">
+              <p>We understand that schedules change. Please provide at least 24 hours notice for cancellations or
+                rescheduling to avoid a <b>$50 cancellation fee</b>. You can easily modify your appointment through your booking
+                confirmation email/text or by calling us at <a href="tel:8328192156">(832) 819-2156</a>.</p>
+            </div>
           </div>
         </div>
 
@@ -314,6 +385,60 @@
             "@type": "Answer",
             "text": "A typical balayage service takes approximately 3 hours. This includes consultation, application, processing time, shampooing, toning, and styling. For first-time balayage clients or color corrections, the appointment may take longer. We recommend booking a consultation first if you're unsure."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Kaizen Hair Studio located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kaizen Hair Studio is located in the Vintage Park shopping center in Northwest Houston at Salon Boutique Vintage Park, 118 Vintage Park Blvd Suite 25, Houston, TX 77070. We serve clients from Houston, Cypress, Spring, The Woodlands, Champions, Willowbrook, and surrounding communities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you sell professional hair products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer a curated selection of premium hair care products from Goldwell (professional color care and styling), Oribe (luxury hair care and styling solutions), and Kerasilk (high-performance, cruelty-free products). Products are available for purchase in-salon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should I book an appointment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For color services and extensions, we recommend booking 2-3 weeks in advance, especially if you prefer weekend appointments. For haircuts, 1-2 weeks notice is usually sufficient. Last-minute openings occasionally become available via our online booking system."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if I need to cancel or reschedule my appointment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Please provide at least 24 hours notice for cancellations or rescheduling to avoid a $50 cancellation fee. You can easily modify your appointment through your booking confirmation email/text or by calling us at (832) 819-2156."
+          }
+        }
+      ]
+    }
+    </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://kaizenhair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://kaizenhair.com/faq.html"
         }
       ]
     }
@@ -369,12 +494,22 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Add click handlers to FAQ headings
-      const faqHeadings = document.querySelectorAll('.faq-item h2');
+      // Accessible FAQ accordion with button pattern
+      const faqButtons = document.querySelectorAll('.faq-question');
 
-      faqHeadings.forEach(heading => {
-        heading.addEventListener('click', function () {
-          this.classList.toggle('active');
+      faqButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !expanded);
+
+          const answer = document.getElementById(this.getAttribute('aria-controls'));
+          if (!expanded) {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            this.querySelector('.faq-toggle-icon').textContent = '-';
+          } else {
+            answer.style.maxHeight = '0';
+            this.querySelector('.faq-toggle-icon').textContent = '+';
+          }
         });
       });
     });

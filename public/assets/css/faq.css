@@ -40,6 +40,10 @@
   }
   
   .faq-item h2 {
+    margin-bottom: 0;
+  }
+
+  .faq-question {
     width: 100%;
     background-color: var(--background-alt);
     border: none;
@@ -54,58 +58,49 @@
     justify-content: space-between;
     align-items: center;
     transition: background-color var(--transition-normal);
-    margin-bottom: 0;
+    font-family: inherit;
+    line-height: 1.4;
   }
   
-  .faq-item h2:hover {
+  .faq-question:hover {
     background-color: var(--primary-light);
   }
-  
-  .faq-item h2:after {
-    content: '+';
+
+  .faq-toggle-icon {
     font-size: 1.5rem;
     font-weight: 300;
+    flex-shrink: 0;
+    margin-left: 1rem;
+    transition: transform var(--transition-normal);
   }
   
-  .faq-item h2.active {
+  .faq-question[aria-expanded="true"] {
     background-color: var(--primary-color);
     color: white;
   }
-  
-  .faq-item h2.active:after {
-    content: '-';
-  }
-  
-  .faq-item p, 
-  .faq-item address, 
-  .faq-item ul {
-    padding: 0 var(--space-md);
+
+  .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height var(--transition-normal), padding var(--transition-normal);
+    transition: max-height 0.3s ease;
+  }
+  
+  .faq-answer p, 
+  .faq-answer address, 
+  .faq-answer ul {
+    padding: var(--space-sm) var(--space-md);
     margin: 0;
   }
   
-  .faq-item h2.active + p,
-  .faq-item h2.active + p + p,
-  .faq-item h2.active + p + ul,
-  .faq-item h2.active + p + address,
-  .faq-item h2.active + p + p + p,
-  .faq-item h2.active + p + p + ul,
-  .faq-item h2.active + p + p + address {
-    max-height: 1000px;
-    padding: var(--space-sm) var(--space-md) var(--space-md);
-  }
-  
-  .faq-item p {
+  .faq-answer p {
     line-height: 1.6;
   }
   
-  .faq-item ul {
+  .faq-answer ul {
     padding-left: calc(var(--space-md) + 1.5rem);
   }
   
-  .faq-item li {
+  .faq-answer li {
     margin-bottom: 0.5rem;
     line-height: 1.6;
   }
@@ -182,21 +177,14 @@
       font-size: 2rem;
     }
     
-    .faq-item h2 {
+    .faq-question {
       font-size: 1rem;
       padding: 1rem;
     }
     
-    .faq-item p, 
-    .faq-item ul {
-      padding: 0 1rem;
-    }
-    
-    .faq-item h2.active + p,
-    .faq-item h2.active + p + p,
-    .faq-item h2.active + p + ul,
-    .faq-item h2.active + p + address {
-      padding: 1rem;
+    .faq-answer p, 
+    .faq-answer ul {
+      padding: 0.75rem 1rem;
     }
     
     .related-posts {
