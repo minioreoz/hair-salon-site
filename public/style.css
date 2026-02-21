@@ -2617,4 +2617,138 @@ picture {
   .hero-image .image-container {
     animation: none;
   }
+
+  /* Disable scroll-triggered animations */
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-stagger {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/*======= SCROLL-TRIGGERED REVEAL ANIMATIONS ===================*/
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide in from left */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide in from right */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Staggered children — uses CSS custom property --stagger for delay */
+.reveal-stagger {
+  transition-delay: calc(var(--stagger, 0) * 0.12s);
+}
+
+/* Scale-up reveal for cards */
+.reveal.reveal-scale {
+  transform: scale(0.92) translateY(30px);
+}
+
+.reveal.reveal-scale.revealed {
+  transform: scale(1) translateY(0);
+}
+
+/* Instagram grid item reveal */
+.instagram-grid-item {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.instagram-grid-item.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* FAQ items stagger */
+.faq-preview-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow var(--transition-normal);
+}
+
+.faq-preview-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contact list items stagger */
+.contact-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow var(--transition-normal),
+              border-color var(--transition-normal);
+}
+
+.contact-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover micro-interactions — enhanced */
+.pricing-category,
+.product-card,
+.testimonial-card,
+.blog-preview-card {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s ease;
+}
+
+/* Smooth section title underline grow */
+.section-header.revealed .section-title::after {
+  animation: underlineGrow 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
+@keyframes underlineGrow {
+  from {
+    transform: scaleX(0);
+    transform-origin: center;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
 }

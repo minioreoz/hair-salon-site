@@ -49,8 +49,14 @@
   <meta name="twitter:image" content="https://kaizenhair.com/assets/img/social-share.jpg">
 
   <!-- FAVICON -->
-  <link rel="icon" type="img/x-icon" href="/assets/img/favicon.ico">
-  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+
+  <!-- THEME COLOR -->
+  <meta name="theme-color" content="#b5ae98">
+  <meta name="msapplication-TileColor" content="#b5ae98">
 
   <!-- STYLES -->
   <link rel="stylesheet" href="/style.css" />
@@ -62,6 +68,8 @@
   <!-- FONTS  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="https://kaizenhair.square.site" />
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Forum&display=swap"
     rel="stylesheet" />
@@ -184,12 +192,12 @@
     <!-- ABOUT SECTION  -->
     <section class="section about" id="about">
       <div class="container">
-        <header class="section-header">
+        <header class="section-header reveal">
           <h2 class="section-title">About Kaizen Hair Studio</h2>
         </header>
 
         <div class="about-cards">
-          <div class="about-card">
+          <div class="about-card reveal reveal-left">
             <div class="about-card-image">
               <picture>
                 <source srcset="/assets/img/studio.webp" type="image/webp">
@@ -223,7 +231,7 @@
             </div>
           </div>
 
-          <div class="about-card">
+          <div class="about-card reveal reveal-right">
             <div class="about-card-image">
               <picture>
                 <source srcset="/assets/img/styling.webp" type="image/webp">
@@ -267,7 +275,7 @@
     <!-- SERVICES SECTION -->
     <section class="section pricing" id="services">
       <div class="container">
-        <header class="section-header">
+        <header class="section-header reveal">
           <h2 class="section-title">Our Services</h2>
           <p class="section-subtitle">
             Transparent pricing for all our services using industry-leading products, including
@@ -278,7 +286,7 @@
         </header>
 
         <div class="pricing-grid">
-          <div class="pricing-category">
+          <div class="pricing-category reveal reveal-stagger" style="--stagger: 0">
             <h3>Haircuts & Styling</h3>
             <ul class="price-list">
               <li>
@@ -309,7 +317,7 @@
             </ul>
           </div>
 
-          <div class="pricing-category">
+          <div class="pricing-category reveal reveal-stagger" style="--stagger: 1">
             <h3>Color Services</h3>
             <ul class="price-list">
               <li>
@@ -340,7 +348,7 @@
             </ul>
           </div>
 
-          <div class="pricing-category">
+          <div class="pricing-category reveal reveal-stagger" style="--stagger: 2">
             <h3>Specialty Services</h3>
             <ul class="price-list">
               <li>
@@ -383,7 +391,7 @@
     <!-- PRODUCTS SECTION -->
     <section class="section products" id="products">
       <div class="container">
-        <header class="section-header">
+        <header class="section-header reveal">
           <h2 class="section-title">Premium Hair Products</h2>
           <p class="section-subtitle">
             Take home the same professional-grade products we use in our Vintage Park salon.
@@ -391,7 +399,7 @@
         </header>
 
         <div class="products-grid">
-          <div class="product-card">
+          <div class="product-card reveal reveal-stagger" style="--stagger: 0">
             <div class="product-icon">
               <i class="icon-cosmetic"></i>
             </div>
@@ -407,7 +415,7 @@
             </ul>
           </div>
 
-          <div class="product-card">
+          <div class="product-card reveal reveal-stagger" style="--stagger: 1">
             <div class="product-icon">
               <i class="icon-woman-hair"></i>
             </div>
@@ -423,7 +431,7 @@
             </ul>
           </div>
 
-          <div class="product-card">
+          <div class="product-card reveal reveal-stagger" style="--stagger: 2">
             <div class="product-icon">
               <i class="icon-trim"></i>
             </div>
@@ -449,7 +457,7 @@
     <!-- INSTAGRAM SECTION -->
     <section class="section instagram-section" id="instagram">
       <div class="container">
-        <header class="section-header">
+        <header class="section-header reveal">
           <h2 class="section-title">Follow Our Journey</h2>
           <p class="section-subtitle">See the latest hair transformations and behind-the-scenes moments</p>
         </header>
@@ -504,7 +512,7 @@
     <!-- GOOGLE REVIEWS SECTION -->
     <section class="section testimonials" id="testimonials">
       <div class="container">
-        <header class="section-header">
+        <header class="section-header reveal">
           <h2 class="section-title">Love From Our Clients</h2>
           <div class="google-overall-rating">
             <a href="https://www.google.com/maps/place/Kaizen+Hair+Studio/@29.9948009,-95.5758111,17z/data=!4m8!3m7!1s0x8640d3d462ddd645:0x2a971dac6812a1a!8m2!3d29.9948009!4d-95.5732362!9m1!1b1!16s%2Fg%2F11ldtxm3k_?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="google-overall-link">
@@ -524,7 +532,7 @@
 
         <div class="testimonials-grid">
 
-          <a class="testimonial-card google-review-card" href="https://maps.app.goo.gl/oaB4Jy4hB42i4kWz9" target="_blank" rel="noopener noreferrer">
+          <a class="testimonial-card google-review-card reveal reveal-stagger" style="--stagger: 0" href="https://maps.app.goo.gl/oaB4Jy4hB42i4kWz9" target="_blank" rel="noopener noreferrer">
             <div class="review-header">
               <div class="reviewer-avatar">E</div>
               <div class="reviewer-info">
@@ -544,7 +552,7 @@
             <p class="review-text">I found Minh while scrolling google for stylist near me. I'm very glad to have stumbled across her! She accommodated for same day appointment and did an amazing job cutting my very outgrown hair. Looking forward to coming back!:)</p>
           </a>
 
-          <a class="testimonial-card google-review-card" href="https://maps.app.goo.gl/cbW6syb1ZxgcEZuh8" target="_blank" rel="noopener noreferrer">
+          <a class="testimonial-card google-review-card reveal reveal-stagger" style="--stagger: 1" href="https://maps.app.goo.gl/cbW6syb1ZxgcEZuh8" target="_blank" rel="noopener noreferrer">
             <div class="review-header">
               <div class="reviewer-avatar">A</div>
               <div class="reviewer-info">
@@ -564,7 +572,7 @@
             <p class="review-text">I had an amazing experience, Minh was so welcoming and explained each process to me. I was worried about my hair since I hadn't dyed it in awhile but Minh did a beautiful job on my hair that needed color correcting and highlights.</p>
           </a>
 
-          <a class="testimonial-card google-review-card" href="https://maps.app.goo.gl/wWjYiu7cHfZbAbzj8" target="_blank" rel="noopener noreferrer">
+          <a class="testimonial-card google-review-card reveal reveal-stagger" style="--stagger: 2" href="https://maps.app.goo.gl/wWjYiu7cHfZbAbzj8" target="_blank" rel="noopener noreferrer">
             <div class="review-header">
               <div class="reviewer-avatar">C</div>
               <div class="reviewer-info">
@@ -600,14 +608,14 @@
     <!-- RECENT BLOG POSTS SECTION -->
     <section class="section recent-posts" id="blog-preview">
       <div class="container">
-        <header class="section-header">
+        <header class="section-header reveal">
           <h2 class="section-title">Hair Care Tips & Trends</h2>
           <p class="section-subtitle">Expert advice and the latest hair trends from our blog</p>
         </header>
 
         <div class="blog-preview-grid">
           <!-- Featured post (large) -->
-          <article class="blog-preview-card blog-preview-featured">
+          <article class="blog-preview-card blog-preview-featured reveal">
             <a href="/blog/hair-color-for-skin-tone.html" class="blog-preview-link">
               <div class="blog-preview-image">
                 <img src="/assets/img/blog/hair-color-skin-tone.jpg"
@@ -622,7 +630,7 @@
           </article>
 
           <!-- Secondary posts -->
-          <article class="blog-preview-card">
+          <article class="blog-preview-card reveal reveal-stagger" style="--stagger: 0">
             <a href="/blog/balayage-vs-highlights.html" class="blog-preview-link">
               <div class="blog-preview-image">
                 <img src="/assets/img/blog/balayage-vs-highlights.jpg"
@@ -635,7 +643,7 @@
             </a>
           </article>
 
-          <article class="blog-preview-card">
+          <article class="blog-preview-card reveal reveal-stagger" style="--stagger: 1">
             <a href="/blog/best-haircut-for-face-shape.html" class="blog-preview-link">
               <div class="blog-preview-image">
                 <img src="/assets/img/blog/best-haircut-face-shape.jpg"
@@ -648,7 +656,7 @@
             </a>
           </article>
 
-          <article class="blog-preview-card">
+          <article class="blog-preview-card reveal reveal-stagger" style="--stagger: 2">
             <a href="/blog/houston-hair-care-tips.html" class="blog-preview-link">
               <div class="blog-preview-image">
                 <img src="/assets/img/blog/houston-humidity-hair.jpg"
@@ -661,7 +669,7 @@
             </a>
           </article>
 
-          <article class="blog-preview-card">
+          <article class="blog-preview-card reveal reveal-stagger" style="--stagger: 3">
             <a href="/blog/color-maintenance-guide.html" class="blog-preview-link">
               <div class="blog-preview-image">
                 <img src="/assets/img/blog/color-maintenance-guide.jpg"
@@ -685,7 +693,7 @@
     <!-- FAQ PREVIEW SECTION -->
     <section class="section faq-preview" id="faq-preview">
       <div class="container">
-        <header class="section-header">
+        <header class="section-header reveal">
           <h2 class="section-title">Frequently Asked Questions</h2>
           <p class="section-subtitle">
             Find quick answers to common questions about our services
@@ -743,7 +751,7 @@
     <section class="section contact" id="contact">
       <div class="container">
         <div class="contact-grid">
-          <div class="contact-content">
+          <div class="contact-content reveal reveal-left">
             <h2 class="section-title">Get in Touch</h2>
             <p class="contact-description">
               Whether you're in Houston, Cypress, or anywhere in between, reach out to schedule an appointment, ask
@@ -758,7 +766,7 @@
             </div>
           </div>
 
-          <div class="contact-info">
+          <div class="contact-info reveal reveal-right">
             <ul class="contact-list">
               <li class="contact-item">
                 <i class="icon-phone"></i>
@@ -1008,6 +1016,101 @@
             "name": "Ryan N."
           },
           "reviewBody": "I've been told by many barbers and stylists alike that my hair is incredibly difficult to cut. Minh has always risen to the challenge and been able to deliver on a great haircut every single time. She's definitely one of the best Houston hair stylists I've ever visited!"
+        }
+      ]
+    }
+    </script>
+
+  <!-- WebSite Schema for sitelinks -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Kaizen Hair Studio",
+      "url": "https://kaizenhair.com",
+      "description": "Premier hair stylist in Houston's Vintage Park offering balayage, precision cuts, NBR extensions, and color services.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kaizen Hair Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://kaizenhair.com/assets/img/logo.png"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://kaizenhair.com/blog/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+  <!-- Person Schema for stylist -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Minh Nguyen",
+      "jobTitle": "Professional Hair Stylist & Colorist",
+      "worksFor": {
+        "@type": "HairSalon",
+        "name": "Kaizen Hair Studio"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Vidal Sassoon Academy",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santa Monica",
+          "addressRegion": "CA"
+        }
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "Goldwell Master Colorist"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "Natural Beaded Rows Extension Specialist"
+        }
+      ],
+      "knowsAbout": ["Balayage", "Hair Coloring", "NBR Extensions", "Precision Haircuts", "Goldwell Products", "Oribe Products", "Kerasilk Treatments"],
+      "sameAs": ["https://instagram.com/kaizenhairhtx"]
+    }
+    </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://kaizenhair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://kaizenhair.com/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Blog",
+          "item": "https://kaizenhair.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "FAQ",
+          "item": "https://kaizenhair.com/faq.html"
         }
       ]
     }
