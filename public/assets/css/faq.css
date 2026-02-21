@@ -109,6 +109,20 @@
     text-align: center;
     margin-top: 3rem;
   }
+
+  /* Styled links in the FAQ section subtitle */
+  .section-subtitle a {
+    color: var(--primary-dark);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 3px;
+    transition: color var(--transition-normal);
+  }
+
+  .section-subtitle a:hover {
+    color: var(--primary-color);
+  }
   
   /* Related Content Section */
   .related-content {
@@ -213,3 +227,9 @@
   .faq-item:nth-child(8) { animation-delay: 0.45s; }
   .faq-item:nth-child(9) { animation-delay: 0.5s; }
   .faq-item:nth-child(10) { animation-delay: 0.55s; }
+
+/* Related content CTA spacing */
+.related-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
