@@ -2899,3 +2899,27 @@ picture {
     transition: none;
   }
 }
+
+/* Full-width pricing category (NBR Extensions) */
+.pricing-category--wide {
+  grid-column: 1 / -1;
+}
+
+.pricing-category-link {
+  margin-top: var(--space-md);
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .pricing-category--wide .price-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: var(--space-md);
+  }
+
+  .pricing-category--wide .price-list li {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}

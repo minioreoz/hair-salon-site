@@ -1,0 +1,95 @@
+/* NBR Hair Extensions page */
+
+.ext-header-cta {
+  margin-top: var(--space-md);
+  text-align: center;
+}
+
+.ext-intro-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.ext-intro-text p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.ext-benefits {
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.ext-intro-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.ext-candidate,
+.ext-menu {
+  background-color: var(--background-alt);
+}
+
+.ext-columns,
+.ext-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+  list-style: none;
+  padding: 0;
+}
+
+.ext-card {
+  background-color: white;
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.ext-process .ext-card {
+  background-color: var(--background-alt);
+}
+
+.ext-card h3 {
+  font-family: 'Forum', serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.ext-card ul {
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.ext-card p {
+  line-height: 1.7;
+}
+
+.ext-menu .pricing-category {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.ext-menu-note {
+  text-align: center;
+  margin-top: var(--space-md);
+  color: var(--text-muted);
+}
+
+.faq .section-title {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .ext-intro-grid {
+    grid-template-columns: 1fr;
+  }
+}
