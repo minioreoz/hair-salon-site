@@ -69,7 +69,7 @@ a {
 }
 
 a:hover {
-  color: #b5ae98;
+  color: var(--primary-text);
 }
 
 img {
@@ -90,6 +90,7 @@ button {
   --primary-color: #b5ae98;
   --primary-light: #e5e2d9;
   --primary-dark: #8c846f;
+  --primary-text: #6f6855; /* tan dark enough for text on light backgrounds (5.5:1) */
   --secondary-color: #37352f;
   --text-color: #555;
   --text-muted: #666;
@@ -240,7 +241,7 @@ strong {
 
 .button-outline {
   background: transparent;
-  color: var(--primary-color);
+  color: var(--primary-text);
   border: 2px solid var(--primary-color);
 }
 
@@ -255,7 +256,7 @@ strong {
 }
 
 .text-link {
-  color: var(--primary-color);
+  color: var(--primary-text);
   font-weight: 500;
   position: relative;
   display: inline-block;
@@ -1507,7 +1508,7 @@ strong {
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-md);
   margin-bottom: var(--space-lg);
 }
@@ -1890,7 +1891,7 @@ strong {
 }
 
 .contact-item a {
-  color: var(--primary-color);
+  color: var(--primary-text);
   font-weight: 500;
 }
 
@@ -1903,7 +1904,7 @@ strong {
   display: inline-block;
   margin-top: 0.5rem;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--primary-text);
 }
 
 @media (max-width: 991px) {
@@ -2032,9 +2033,13 @@ strong {
   .container {
     max-width: 960px;
   }
-  
+
   .hero-title {
     font-size: 3.2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -2266,7 +2271,7 @@ strong {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--primary-color);
+  color: var(--primary-text);
   background: rgba(181, 155, 107, 0.1);
   padding: 0.2rem 0.6rem;
   border-radius: 3px;
