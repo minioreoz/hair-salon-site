@@ -2913,8 +2913,8 @@ picture {
 @media (min-width: 1024px) {
   .pricing-category--wide .price-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: var(--space-md);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
   }
 
   .pricing-category--wide .price-list li {
