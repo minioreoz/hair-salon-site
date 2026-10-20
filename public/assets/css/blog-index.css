@@ -1,9 +1,29 @@
 /* Blog home page */
 
 .bi-header {
-  padding: calc(80px + 3.5rem) 0 2.5rem;
-  background: var(--gradient-hero);
+  padding: calc(80px + 3rem) 0 0;
+  background-color: #f0f2ed;
   text-align: center;
+}
+
+/* Bottom band of the hero photo (hands holding tools), faded into the header color */
+.bi-header-art {
+  height: min(36vw, 700px);
+  margin-top: 1.5rem;
+  background-image: linear-gradient(#f0f2ed, rgba(240, 242, 237, 0) 20%),
+    url('/assets/img/blog/hair-blog-hero.jpg');
+  background-image: linear-gradient(#f0f2ed, rgba(240, 242, 237, 0) 20%),
+    image-set(url('/assets/img/blog/hair-blog-hero.webp') type('image/webp'),
+      url('/assets/img/blog/hair-blog-hero.jpg') type('image/jpeg'));
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 640px) {
+  .bi-header-art {
+    height: 44vw;
+  }
 }
 
 .bi-eyebrow {
