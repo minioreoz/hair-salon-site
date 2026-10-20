@@ -102,6 +102,9 @@ button {
   
   /* gradients */
   --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--accent-warm));
+  /* darker tan for buttons with white text (5:1 or better) */
+  --gradient-button: linear-gradient(135deg, var(--primary-text), #806c50);
+  --gradient-button-hover: linear-gradient(135deg, #5e5847, var(--primary-text));
   --gradient-hero: linear-gradient(160deg, #faf9f6 0%, #f1ede6 50%, #ebe6db 100%);
   --gradient-dark: linear-gradient(135deg, #2a2825, #3d3a34);
   
@@ -203,7 +206,7 @@ strong {
   align-items: center;
   justify-content: center;
   padding: 0.9rem 2.2rem;
-  background: var(--gradient-primary);
+  background: var(--gradient-button);
   color: white;
   font-weight: 600;
   font-size: 0.95rem;
@@ -224,7 +227,7 @@ strong {
 
 .button:hover {
   color: white;
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  background: var(--gradient-button-hover);
   transform: translateY(-3px);
   box-shadow: var(--shadow-glow);
 }
@@ -250,7 +253,7 @@ strong {
 }
 
 .button-outline:hover {
-  background: var(--gradient-primary);
+  background: var(--gradient-button);
   color: white;
   border-color: transparent;
 }
@@ -430,7 +433,7 @@ strong {
   align-items: center;
   justify-content: center;
   padding: 0.55rem 1.4rem !important;
-  background: var(--gradient-primary);
+  background: var(--gradient-button);
   color: white !important;
   border-radius: var(--radius-xl);
   font-size: 0.88rem !important;
@@ -447,7 +450,7 @@ strong {
 
 .nav-book-btn:hover {
   color: white !important;
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  background: var(--gradient-button-hover);
   transform: translateY(-3px);
   box-shadow: var(--shadow-glow);
 }
@@ -473,6 +476,7 @@ strong {
 .hamburger:after {
   content: '';
   position: absolute;
+  left: 0;
   width: 24px;
   height: 2px;
   background-color: var(--title-color);
@@ -503,7 +507,11 @@ strong {
 
 @media (max-width: 991px) {
   .menu-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 44px;
+    height: 44px;
   }
   
   .main-nav .menu {
@@ -1121,15 +1129,10 @@ strong {
     gap: var(--space-sm);
   }
 
-  /* Show compact logo on mobile too */
-  .hero-image {
-    display: flex;
-    order: -1;
-    justify-content: flex-start;
-  }
-
-  .image-container {
-    max-width: 120px;
+  /* Header already shows the brand; give the space to the headline and CTA */
+  .hero-image,
+  .hero-tagline {
+    display: none;
   }
 
   .hero-tagline {
@@ -1193,10 +1196,9 @@ strong {
     font-size: 0.78rem;
   }
 
-  /* Highlights as compact horizontal scroll on mobile */
+  /* Highlights repeat the price line; hide on phones */
   .hero-highlights {
-    gap: 1rem;
-    flex-wrap: wrap;
+    display: none;
   }
 
   .hero-highlight-icon {
@@ -2331,7 +2333,7 @@ strong {
 }
 
 .faq-preview-question.active {
-  background: var(--gradient-primary);
+  background: var(--gradient-button);
   color: white;
 }
 
