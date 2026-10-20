@@ -165,9 +165,14 @@ p {
   line-height: 1.7;
 }
 
+/* Bold is emphasis, not color: tan bold text read as links and failed contrast */
 strong {
   font-weight: 600;
-  color: var(--primary-dark);
+  color: inherit;
+}
+
+a strong {
+  color: var(--primary-text);
 }
 
 .section-title {
@@ -2008,7 +2013,7 @@ strong {
   right: 2rem;
   width: 48px;
   height: 48px;
-  background: var(--gradient-primary);
+  background: var(--gradient-button);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -2724,5 +2729,173 @@ picture {
   to {
     transform: scaleX(1);
     transform-origin: center;
+  }
+}
+
+/*======= MOBILE LAYOUT (phones) ===================*/
+/* Phone-only helpers, hidden on larger screens */
+.services-hint,
+.service-toggle,
+.mobile-book-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Services: name, price and duration only; tap a service for its description */
+  .services-hint {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .price-list li {
+    position: relative;
+    padding-right: 44px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .price-list li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Name and price on one row, duration underneath */
+  .price-list li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+    align-items: baseline;
+  }
+
+  .service-details {
+    display: contents;
+  }
+
+  .service-name {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0;
+  }
+
+  .price {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .duration {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .service-description {
+    grid-column: 1 / -1;
+  }
+
+  .service-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.4rem;
+    color: var(--primary-text);
+  }
+
+  .service-description {
+    display: none;
+    margin-top: 0.5rem;
+  }
+
+  .price-list li.open .service-description {
+    display: block;
+  }
+
+  /* Booking bar pinned to the bottom of the screen once the hero button scrolls away */
+  .mobile-book-bar {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    transform: translateY(100%);
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0.3s;
+  }
+
+  .mobile-book-bar.show {
+    transform: none;
+    visibility: visible;
+  }
+
+  .mobile-book-bar .button {
+    width: 100%;
+  }
+
+  /* Room for the bar so it never covers the footer (only on pages that have it) */
+  body:has(.mobile-book-bar) {
+    padding-bottom: 76px;
+  }
+
+  /* The booking bar takes this corner, and it covered the service toggles */
+  body:has(.mobile-book-bar) .back-to-top {
+    display: none;
+  }
+
+  /* Products: compact 2x2 grid of brands */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .product-card {
+    padding: 1rem;
+  }
+
+  .product-icon,
+  .product-description {
+    display: none;
+  }
+
+  .product-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-list {
+    padding-left: 1rem;
+    font-size: 0.82rem;
+  }
+
+  .product-list li {
+    margin-bottom: 0.25rem;
+  }
+
+  /* Contact: the whole card is the tap target for its link */
+  .contact-item {
+    position: relative;
+  }
+
+  .contact-item a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-book-bar {
+    transition: none;
   }
 }
