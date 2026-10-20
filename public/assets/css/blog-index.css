@@ -1,28 +1,49 @@
 /* Blog home page */
 
+/* Same height as the text-only header: the panel's padding comes out of the section padding */
 .bi-header {
-  padding: calc(80px + 3rem) 0 0;
+  padding: calc(80px + 2rem) 0 1rem;
   background-color: #f0f2ed;
+  background-image: url('/assets/img/blog/hair-blog-hero.jpg');
+  background-image: image-set(url('/assets/img/blog/hair-blog-hero.webp') type('image/webp'),
+      url('/assets/img/blog/hair-blog-hero.jpg') type('image/jpeg'));
+  background-position: center 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
-/* Bottom band of the hero photo (hands holding tools), faded into the header color */
-.bi-header-art {
-  height: min(36vw, 700px);
-  margin-top: 1.5rem;
-  background-image: linear-gradient(#f0f2ed, rgba(240, 242, 237, 0) 20%),
-    url('/assets/img/blog/hair-blog-hero.jpg');
-  background-image: linear-gradient(#f0f2ed, rgba(240, 242, 237, 0) 20%),
-    image-set(url('/assets/img/blog/hair-blog-hero.webp') type('image/webp'),
-      url('/assets/img/blog/hair-blog-hero.jpg') type('image/jpeg'));
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+.bi-header-panel {
+  display: inline-block;
+  max-width: 720px;
+  padding: 1.5rem 2.5rem;
+  border-radius: var(--radius-lg);
+  background: rgba(240, 242, 237, 0.84);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+@media (max-width: 991px) {
+  .bi-header {
+    padding: calc(80px + 2.5rem) 0 1.5rem;
+  }
+
+  .bi-header-panel {
+    padding: 1rem 1.25rem;
+  }
 }
 
 @media (max-width: 640px) {
-  .bi-header-art {
-    height: 44vw;
+  .bi-header {
+    padding: calc(80px + 2rem) 0 1.25rem;
+  }
+
+  .bi-header-panel {
+    padding: 1rem 0.75rem;
+  }
+
+  .bi-header h1 {
+    font-size: 1.9rem;
   }
 }
 
@@ -392,5 +413,11 @@
   .bi-card:hover,
   .bi-featured:hover {
     transform: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .bi-header h1 {
+    font-size: 1.7rem;
   }
 }
