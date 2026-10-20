@@ -746,7 +746,7 @@ strong {
 /* Subtitle */
 .hero-subtitle {
   font-size: 1.18rem;
-  color: var(--primary-dark);
+  color: var(--primary-text);
   margin-bottom: var(--space-md);
   font-weight: 500;
   line-height: 1.65;
@@ -988,6 +988,13 @@ strong {
   transform: scale(1.02);
 }
 
+/* Hero responsive — hero sizes live only in these blocks so later rules can't override them */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3.2rem;
+  }
+}
+
 /* Hero responsive — tablet */
 @media (max-width: 991px) {
   .hero {
@@ -1042,6 +1049,7 @@ strong {
 
   .image-container {
     max-width: 160px;
+    margin: 0;
   }
 
   .image-container::before,
@@ -2034,10 +2042,6 @@ strong {
     max-width: 960px;
   }
 
-  .hero-title {
-    font-size: 3.2rem;
-  }
-
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2050,10 +2054,6 @@ strong {
   
   .section:not(.hero) {
     padding: var(--space-md) 0;
-  }
-  
-  .hero-title {
-    font-size: 2.8rem;
   }
   
   .section-title {
@@ -2069,14 +2069,6 @@ strong {
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
-  }
-  
-  .hero-title {
-    font-size: 2.2rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.05rem;
   }
   
   .products-grid,
@@ -2099,18 +2091,6 @@ strong {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-  
-  .hero-title {
-    font-size: 1.9rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-  
-  .hero-tagline {
-    font-size: 0.75rem;
   }
   
   .section-title {
