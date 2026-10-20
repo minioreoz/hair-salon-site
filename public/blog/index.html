@@ -43,6 +43,7 @@
   <link rel="preload" href="/assets/fonts/style.css" as="style">
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="/assets/css/blog.css" />
+  <link rel="stylesheet" href="/assets/css/blog-index.css" />
   <link rel="stylesheet" href="/assets/fonts/style.css" />
 
   <!-- FONTS  -->
@@ -92,278 +93,185 @@
   </header>
 
   <main id="main">
-    <!-- BLOG HERO -->
-    <section class="page-header blog-header" style="background-image: url('/assets/img/blog/blonding-guide.jpg')">
-      <div class="blog-header-overlay"></div>
+    <!-- BLOG HEADER -->
+    <section class="bi-header">
       <div class="container">
-        <div class="blog-header-content">
-          <span class="blog-header-eyebrow">Kaizen Hair Studio</span>
-          <h1>Houston Hair Care Blog</h1>
-          <div class="blog-header-divider"></div>
-          <p>Expert styling tips, product recommendations, and hair trends — straight from the chair.</p>
-          <div class="blog-header-tags">
-            <span>Color</span>
-            <span>Extensions</span>
-            <span>Styling</span>
-            <span>Products</span>
-            <span>Trends</span>
+        <p class="bi-eyebrow">Kaizen Hair Studio</p>
+        <h1>Houston Hair Care Blog</h1>
+        <p class="bi-lede">Styling tips, color guides, product picks and seasonal trends, straight from the chair in
+          Vintage Park.</p>
+      </div>
+    </section>
+
+    <!-- FEATURED POST -->
+    <section class="bi-featured-section" aria-label="Latest post">
+      <div class="container">
+        <article class="bi-featured">
+          <picture class="bi-featured-media">
+            <source srcset="/assets/img/blog/fall-winter-hair-trends.webp" type="image/webp">
+            <img src="/assets/img/blog/fall-winter-hair-trends.jpg" alt="Woman with long, straight blonde hair wearing a winter coat and pink knit scarf" width="1200" height="800">
+          </picture>
+          <div class="bi-featured-body">
+            <span class="bi-chip">Latest &middot; Trends</span>
+            <h2><a href="/blog/fall-winter-hair-trends">Fall and Winter Hair Trends 2026: What Houston Is Wearing</a></h2>
+            <p>Baked-in brunettes, cinnamon copper, black cherry and bouncy bobs: the fall and winter colors and cuts Houston clients are asking for, plus how to care for your hair through the cooler months.</p>
+            <p class="bi-meta"><time datetime="2026-10-20">Oct 20, 2026</time><span aria-hidden="true">&middot;</span>3 min read</p>
+            <span class="bi-read" aria-hidden="true">Read article &rarr;</span>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ALL POSTS -->
+    <section class="bi-posts" aria-labelledby="bi-posts-title">
+      <div class="container">
+        <div class="bi-posts-head">
+          <h2 id="bi-posts-title">More Articles</h2>
+          <div class="bi-filters" role="group" aria-label="Filter articles by topic">
+            <button type="button" class="bi-filter" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="bi-filter" data-filter="hair-color" aria-pressed="false">Hair Color</button>
+            <button type="button" class="bi-filter" data-filter="hair-care" aria-pressed="false">Hair Care</button>
+            <button type="button" class="bi-filter" data-filter="styling-tips" aria-pressed="false">Styling Tips</button>
+            <button type="button" class="bi-filter" data-filter="products" aria-pressed="false">Products</button>
+            <button type="button" class="bi-filter" data-filter="extensions" aria-pressed="false">Extensions</button>
+            <button type="button" class="bi-filter" data-filter="trends" aria-pressed="false">Trends</button>
+          </div>
+        </div>
+        <p class="bi-status" id="bi-filter-status" aria-live="polite"></p>
+
+        <div class="bi-grid">
+            <article class="bi-card" data-category="trends">
+              <picture>
+                <source srcset="/assets/img/blog/thumbs/spring-hair-trends.webp" type="image/webp">
+                <img src="/assets/img/blog/spring-hair-trends.jpg" alt="Woman with soft copper hair color for spring" loading="lazy" width="720" height="450">
+              </picture>
+              <div class="bi-card-body">
+                <span class="bi-chip">Trends</span>
+                <h3 class="bi-card-title"><a href="/blog/spring-hair-trends">Spring Hair Trends 2027: What&#x27;s Hot in Houston</a></h3>
+                <p class="bi-card-excerpt">An early look at spring 2027: buttery blondes, teak brunettes, soft golden copper, airy bobs and soft bangs, with tips for wearing each in Houston humidity.</p>
+                <p class="bi-meta"><time datetime="2026-10-20">Oct 20, 2026</time><span aria-hidden="true">&middot;</span>3 min read</p>
+              </div>
+            </article>
+            <article class="bi-card" data-category="hair-color">
+              <picture>
+                <source srcset="/assets/img/blog/thumbs/hair-color-skin-tone.webp" type="image/webp">
+                <img src="/assets/img/blog/hair-color-skin-tone.jpg" alt="How to choose the right hair color for your skin tone" loading="lazy" width="720" height="450">
+              </picture>
+              <div class="bi-card-body">
+                <span class="bi-chip">Hair Color</span>
+                <h3 class="bi-card-title"><a href="/blog/hair-color-for-skin-tone">How to Choose the Right Hair Color for Your Skin Tone</a></h3>
+                <p class="bi-card-excerpt">Houston colorist guide to finding the most flattering hair color for warm, cool, and neutral undertones. Covers the best shades of blonde, brunette, red, and more for every skin tone.</p>
+                <p class="bi-meta"><time datetime="2026-02-18">Feb 18, 2026</time><span aria-hidden="true">&middot;</span>10 min read</p>
+              </div>
+            </article>
+            <article class="bi-card" data-category="styling-tips">
+              <picture>
+                <source srcset="/assets/img/blog/thumbs/best-haircut-face-shape.webp" type="image/webp">
+                <img src="/assets/img/blog/best-haircut-face-shape.jpg" alt="Best haircut for your face shape guide" loading="lazy" width="720" height="450">
+              </picture>
+              <div class="bi-card-body">
+                <span class="bi-chip">Styling Tips</span>
+                <h3 class="bi-card-title"><a href="/blog/best-haircut-for-face-shape">Best Haircut for Your Face Shape: A Stylist&#x27;s Complete Guide</a></h3>
+                <p class="bi-card-excerpt">Find the most flattering haircut for oval, round, square, heart, oblong, and diamond face shapes. Includes bang recommendations, color tips, and Houston climate styling advice.</p>
+                <p class="bi-meta"><time datetime="2026-02-18">Feb 18, 2026</time><span aria-hidden="true">&middot;</span>10 min read</p>
+              </div>
+            </article>
+            <article class="bi-card" data-category="hair-care">
+              <picture>
+                <source srcset="/assets/img/blog/thumbs/color-maintenance-guide.webp" type="image/webp">
+                <img src="/assets/img/blog/color-maintenance-guide.jpg" alt="How to maintain hair color between salon visits" loading="lazy" width="720" height="450">
+              </picture>
+              <div class="bi-card-body">
+                <span class="bi-chip">Hair Care</span>
+                <h3 class="bi-card-title"><a href="/blog/color-maintenance-guide">How to Make Your Hair Color Last: Complete Maintenance Guide</a></h3>
+                <p class="bi-card-excerpt">Expert tips from a Houston colorist on how to maintain your hair color between salon visits. Discover the best products, washing habits, and techniques to keep your color vibrant longer.</p>
+                <p class="bi-meta"><time datetime="2026-02-18">Feb 18, 2026</time><span aria-hidden="true">&middot;</span>9 min read</p>
+              </div>
+            </article>
+            <article class="bi-card" data-category="products">
+              <picture>
+                <source srcset="/assets/img/blog/thumbs/kerasilk-products.webp" type="image/webp">
+                <img src="/assets/img/blog/kerasilk-products.jpg" alt="Kerasilk luxury hair products" loading="lazy" width="720" height="450">
+              </picture>
+              <div class="bi-card-body">
+                <span class="bi-chip">Products</span>
+                <h3 class="bi-card-title"><a href="/blog/kerasilk-product-guide">Kerasilk Hair Transformation: The Ultimate Guide</a></h3>
+                <p class="bi-card-excerpt">Explore Goldwell&#x27;s premium Kerasilk collections designed for specific hair concerns—from frizz control and repair to volume enhancement and color protection.</p>
+                <p class="bi-meta"><time datetime="2025-03-15">Mar 15, 2025</time><span aria-hidden="true">&middot;</span>9 min read</p>
+              </div>
+            </article>
+            <article class="bi-card" data-category="hair-color">
+              <picture>
+                <source srcset="/assets/img/blog/thumbs/balayage-vs-highlights.webp" type="image/webp">
+                <img src="/assets/img/blog/balayage-vs-highlights.jpg" alt="Balayage vs Highlights comparison" loading="lazy" width="720" height="450">
+              </picture>
+              <div class="bi-card-body">
+                <span class="bi-chip">Hair Color</span>
+                <h3 class="bi-card-title"><a href="/blog/balayage-vs-highlights">Balayage vs. Highlights: Which is Right for You?</a></h3>
+                <p class="bi-card-excerpt">Confused about which coloring technique to choose? This comprehensive guide explains the differences between balayage and highlights, helping you decide which is best for your hair.</p>
+                <p class="bi-meta"><time datetime="2025-03-01">Mar 1, 2025</time><span aria-hidden="true">&middot;</span>5 min read</p>
+              </div>
+            </article>
+            <article class="bi-card" data-category="products">
+              <picture>
+                <source srcset="/assets/img/blog/thumbs/oribe-products.webp" type="image/webp">
+                <img src="/assets/img/blog/oribe-products.jpg" alt="Oribe luxury hair products" loading="lazy" width="720" height="450">
+              </picture>
+              <div class="bi-card-body">
+                <span class="bi-chip">Products</span>
+                <h3 class="bi-card-title"><a href="/blog/oribe-product-guide">Our Favorite Oribe Products for Every Hair Type</a></h3>
+                <p class="bi-card-excerpt">Discover our top Oribe product recommendations for different hair types and concerns. From volumizing solutions to frizz control, find your perfect match.</p>
+                <p class="bi-meta"><time datetime="2025-01-15">Jan 15, 2025</time><span aria-hidden="true">&middot;</span>9 min read</p>
+              </div>
+            </article>
+            <article class="bi-card" data-category="hair-care">
+              <picture>
+                <source srcset="/assets/img/blog/thumbs/houston-humidity-hair.webp" type="image/webp">
+                <img src="/assets/img/blog/houston-humidity-hair.jpg" alt="Woman with frizz-free hair in Houston" loading="lazy" width="720" height="450">
+              </picture>
+              <div class="bi-card-body">
+                <span class="bi-chip">Hair Care</span>
+                <h3 class="bi-card-title"><a href="/blog/houston-hair-care-tips">Houston Hair Care: Surviving Humidity with Style</a></h3>
+                <p class="bi-card-excerpt">Living in Houston means battling humidity year-round. Learn professional strategies to keep your hair looking great despite the challenging Gulf Coast climate.</p>
+                <p class="bi-meta"><time datetime="2025-02-15">Feb 15, 2025</time><span aria-hidden="true">&middot;</span>6 min read</p>
+              </div>
+            </article>
+            <article class="bi-card" data-category="extensions">
+              <picture>
+                <source srcset="/assets/img/blog/thumbs/nbr-extensions.webp" type="image/webp">
+                <img src="/assets/img/blog/nbr-extensions.jpg" alt="Before and after NBR hair extensions" loading="lazy" width="720" height="450">
+              </picture>
+              <div class="bi-card-body">
+                <span class="bi-chip">Extensions</span>
+                <h3 class="bi-card-title"><a href="/blog/nbr-extension-guide">The Complete Guide to NBR Hair Extensions</a></h3>
+                <p class="bi-card-excerpt">Considering Natural Beaded Rows extensions? This comprehensive guide covers everything from the application process to maintenance and cost considerations.</p>
+                <p class="bi-meta"><time datetime="2025-01-10">Jan 10, 2025</time><span aria-hidden="true">&middot;</span>8 min read</p>
+                <a href="/hair-extensions" class="bi-card-extra">See extension services &rarr;</a>
+              </div>
+            </article>
         </div>
       </div>
     </section>
 
-    <!-- FEATURED POST STRIP -->
-    <div class="blog-featured-strip">
+    <!-- EXTENSIONS BANNER -->
+    <section class="bi-banner">
       <div class="container">
-        <div class="blog-header-featured">
-          <span class="post-category">Featured &mdash; Hair Color</span>
-          <div class="blog-header-featured-body">
-            <a href="/blog/blonding-guide" class="blog-header-featured-title">The Complete Guide to Blonding: Techniques, Maintenance &amp; Trends</a>
-            <p>From balayage and foilyage to platinum transformations — plus expert maintenance tips for Houston's climate.</p>
+        <div class="bi-banner-inner">
+          <div class="bi-banner-text">
+            <p class="bi-eyebrow">Hair Extensions</p>
+            <h2>NBR &amp; Bellami Extensions in Houston</h2>
+            <p>K-Tips, I-Tips, tape-ins, wefts and NBR, plus removals, from a certified extension specialist in
+              Vintage Park.</p>
           </div>
-          <a href="/blog/blonding-guide" class="button"><span>Read Article</span></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- FEATURED POST (hidden, replaced by hero) -->
-    <section class="section featured-post" style="display:none">
-    </section>
-
-    <!-- BLOG POSTS GRID -->
-    <section class="section blog-posts">
-      <div class="container">
-        <h2 class="section-title">Latest Hair Care Articles</h2>
-
-        <div class="blog-grid">
-          <!-- Fall and Winter Trends Blog -->
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/fall-winter-hair-trends.jpg" alt="Woman with long, straight blonde hair wearing a winter coat and pink knit scarf" loading="lazy"
-                width="600" height="400">
-              <span class="post-category">Trends</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/fall-winter-hair-trends">Fall and Winter Hair Trends 2026: What Houston Is Wearing</a></h3>
-              <p class="post-meta">
-                <span class="post-date">October 20, 2026</span>
-              </p>
-              <p class="post-excerpt">Baked-in brunettes, cinnamon copper, black cherry and bouncy bobs: the fall and winter colors and cuts Houston clients are asking for, plus how to care for your hair through the cooler months.</p>
-              <a href="/blog/fall-winter-hair-trends" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <!-- Spring Trends Blog -->
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/spring-hair-trends.jpg" alt="Woman with soft copper hair color for spring" loading="lazy"
-                width="600" height="400">
-              <span class="post-category">Trends</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/spring-hair-trends">Spring Hair Trends 2027: What's Hot in Houston</a></h3>
-              <p class="post-meta">
-                <span class="post-date">October 20, 2026</span>
-              </p>
-              <p class="post-excerpt">An early look at spring 2027: buttery blondes, teak brunettes, soft golden copper, airy bobs and soft bangs, with tips for wearing each in Houston humidity.</p>
-              <a href="/blog/spring-hair-trends" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <!-- Hair Color for Skin Tone Blog -->
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/hair-color-skin-tone.jpg" alt="How to choose the right hair color for your skin tone" loading="lazy"
-                width="600" height="400">
-              <span class="post-category">Hair Color</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/hair-color-for-skin-tone">How to Choose the Right Hair Color for Your Skin Tone</a></h3>
-              <p class="post-meta">
-                <span class="post-date">February 18, 2026</span>
-              </p>
-              <p class="post-excerpt">Houston colorist guide to finding the most flattering hair color for warm, cool, and neutral undertones. Covers the best shades of blonde, brunette, red, and more for every skin tone.</p>
-              <a href="/blog/hair-color-for-skin-tone" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <!-- Best Haircut for Face Shape Blog -->
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/best-haircut-face-shape.jpg" alt="Best haircut for your face shape guide" loading="lazy"
-                width="600" height="400">
-              <span class="post-category">Styling Tips</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/best-haircut-for-face-shape">Best Haircut for Your Face Shape: A Stylist's Complete Guide</a></h3>
-              <p class="post-meta">
-                <span class="post-date">February 18, 2026</span>
-              </p>
-              <p class="post-excerpt">Find the most flattering haircut for oval, round, square, heart, oblong, and diamond face shapes. Includes bang recommendations, color tips, and Houston climate styling advice.</p>
-              <a href="/blog/best-haircut-for-face-shape" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <!-- Color Maintenance Guide Blog -->
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/color-maintenance-guide.jpg" alt="How to maintain hair color between salon visits" loading="lazy"
-                width="600" height="400">
-              <span class="post-category">Hair Care</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/color-maintenance-guide">How to Make Your Hair Color Last: Complete Maintenance Guide</a></h3>
-              <p class="post-meta">
-                <span class="post-date">February 18, 2026</span>
-              </p>
-              <p class="post-excerpt">Expert tips from a Houston colorist on how to maintain your hair color between salon visits. Discover the best products, washing habits, and techniques to keep your color vibrant longer.</p>
-              <a href="/blog/color-maintenance-guide" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <!-- Kerasilk Blog -->
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/kerasilk-products.jpg" alt="Kerasilk luxury hair products" loading="lazy"
-                width="600" height="400">
-              <span class="post-category">Products</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/kerasilk-product-guide">Kerasilk Hair Transformation: The Ultimate Guide</a></h3>
-              <p class="post-meta">
-                <span class="post-date">March 15, 2025</span>
-              </p>
-              <p class="post-excerpt">Explore Goldwell's premium Kerasilk collections designed for specific hair concerns—from frizz control and repair to volume enhancement and color protection.</p>
-              <a href="/blog/kerasilk-product-guide" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/balayage-vs-highlights.jpg" alt="Balayage vs Highlights comparison" loading="lazy"
-                width="600" height="400">
-              <span class="post-category">Hair Color</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/balayage-vs-highlights">Balayage vs. Highlights: Which is Right for You?</a></h3>
-              <p class="post-meta">
-                <span class="post-date">March 1, 2025</span>
-              </p>
-              <p class="post-excerpt">Confused about which coloring technique to choose? This comprehensive guide explains the differences between balayage and highlights, helping you decide which is best for your hair.</p>
-              <a href="/blog/balayage-vs-highlights" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/oribe-products.jpg" alt="Oribe luxury hair products" loading="lazy"
-                width="600" height="400">
-              <span class="post-category">Products</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/oribe-product-guide">Our Favorite Oribe Products for Every Hair Type</a></h3>
-              <p class="post-meta">
-                <span class="post-date">January 15, 2025</span>
-              </p>
-              <p class="post-excerpt">Discover our top Oribe product recommendations for different hair types and
-                concerns. From volumizing solutions to frizz control, find your perfect match.</p>
-              <a href="/blog/oribe-product-guide" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/houston-humidity-hair.jpg" alt="Woman with frizz-free hair in Houston"
-                loading="lazy" width="600" height="400">
-              <span class="post-category">Hair Care</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/houston-hair-care-tips">Houston Hair Care: Surviving Humidity with Style</a></h3>
-              <p class="post-meta">
-                <span class="post-date">February 15, 2025</span>
-              </p>
-              <p class="post-excerpt">Living in Houston means battling humidity year-round. Learn professional
-                strategies to keep your hair looking great despite the challenging Gulf Coast climate.</p>
-              <a href="/blog/houston-hair-care-tips" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-image">
-              <img src="/assets/img/blog/nbr-extensions.jpg" alt="Before and after NBR hair extensions" loading="lazy"
-                width="600" height="400">
-              <span class="post-category">Extensions</span>
-            </div>
-            <div class="blog-content">
-              <h3><a href="/blog/nbr-extension-guide">The Complete Guide to NBR Hair Extensions</a></h3>
-              <p class="post-meta">
-                <span class="post-date">January 10, 2025</span>
-              </p>
-              <p class="post-excerpt">Considering Natural Beaded Rows extensions? This comprehensive guide covers
-                everything from the application process to maintenance and cost considerations.</p>
-              <a href="/blog/nbr-extension-guide" class="read-more">Read More</a>
-            </div>
-          </article>
-        </div>
-
-        <!-- BLOG SIDEBAR - CATEGORIES & SEARCH -->
-        <div class="blog-sidebar">
-          <div class="sidebar-section">
-            <h3>Categories</h3>
-            <ul class="category-list">
-              <li><a href="/blog/blonding-guide">Hair Color</a></li>
-              <li><a href="/blog/houston-hair-care-tips">Hair Care</a></li>
-              <li><a href="/blog/houston-hair-care-tips">Styling Tips</a></li>
-              <li><a href="/blog/kerasilk-product-guide">Product Reviews</a></li>
-              <li><a href="/blog/nbr-extension-guide">Hair Extensions</a></li>
-              <li><a href="/blog/fall-winter-hair-trends">Seasonal Trends</a></li>
-            </ul>
+          <div class="bi-banner-actions">
+            <a href="/hair-extensions" class="button"><span>Explore Extensions</span></a>
+            <a href="https://kaizenhair.square.site" class="button button-outline" rel="noopener noreferrer"
+              target="_blank"><span>Book a Consultation</span></a>
           </div>
-
-          <div class="sidebar-section">
-            <h3>Popular Topics</h3>
-            <div class="tag-cloud">
-              <a href="/blog/blonding-guide" class="tag">Blonde Hair</a>
-              <a href="/blog/balayage-vs-highlights" class="tag">Balayage</a>
-              <a href="/blog/houston-hair-care-tips" class="tag">Humidity Control</a>
-              <a href="/blog/kerasilk-product-guide" class="tag">Kerasilk</a>
-              <a href="/blog/nbr-extension-guide" class="tag">Extensions</a>
-              <a href="/blog/kerasilk-product-guide" class="tag">Goldwell</a>
-              <a href="/blog/houston-hair-care-tips" class="tag">Hair Care</a>
-              <a href="/blog/oribe-product-guide" class="tag">Oribe</a>
-              <a href="/blog/houston-hair-care-tips" class="tag">Houston</a>
-              <a href="/blog/best-haircut-for-face-shape" class="tag">Face Shape</a>
-              <a href="/blog/hair-color-for-skin-tone" class="tag">Skin Tone</a>
-            </div>
-          </div>
-
-          <div class="sidebar-section cta-section">
-            <h3>Ready for a Change?</h3>
-            <p>Book your appointment now and transform your look with our expert hair services.</p>
-            <a href="https://kaizenhair.square.site" class="button" rel="noopener noreferrer" target="_blank">Book
-              Instantly Online</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEWSLETTER SIGNUP
-    <section class="section newsletter">
-      <div class="container">
-        <div class="newsletter-content">
-          <h2>Stay Updated with Hair Tips & Special Offers</h2>
-          <p>Subscribe to our newsletter for exclusive styling advice, product recommendations, and special promotions.
-          </p>
-          <form class="newsletter-form" action="/subscribe.php" method="post">
-            <input type="email" name="email" placeholder="Your email address" required>
-            <button type="submit" class="button">Subscribe</button>
-          </form>
-          <p class="privacy-note">We respect your privacy and will never share your information.</p>
         </div>
       </div>
     </section>
   </main>
-   -->
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -381,7 +289,7 @@
             <h4>Areas Served</h4>
             <p>
               Proudly serving clients from: Vintage Park, Houston, Cypress, Spring, The Woodlands, Tomball, Champions,
-              Klein, Willowbrook, and Northwest Houston.
+              Klein, Willowbrook, Jersey Village, and Northwest Houston.
             </p>
           </div>
 
@@ -563,6 +471,28 @@
 
     <!-- Combined JavaScript -->
     <script src="/assets/js/combined.min.js" defer></script>
+  <!-- Topic filters -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const filters = document.querySelectorAll('.bi-filter');
+      const cards = document.querySelectorAll('.bi-card');
+      const status = document.getElementById('bi-filter-status');
+
+      filters.forEach(function (filter) {
+        filter.addEventListener('click', function () {
+          const topic = filter.dataset.filter;
+          let shown = 0;
+          filters.forEach(function (f) { f.setAttribute('aria-pressed', f === filter); });
+          cards.forEach(function (card) {
+            const match = topic === 'all' || card.dataset.category === topic;
+            card.hidden = !match;
+            if (match) shown++;
+          });
+          status.textContent = 'Showing ' + shown + (shown === 1 ? ' article' : ' articles');
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,376 @@
+/* Blog home page */
+
+.bi-header {
+  padding: calc(80px + 3.5rem) 0 2.5rem;
+  background: var(--gradient-hero);
+  text-align: center;
+}
+
+.bi-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  margin-bottom: 0.75rem;
+}
+
+.bi-header h1 {
+  font-family: 'Forum', serif;
+  font-weight: 400;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  color: var(--title-color);
+  margin-bottom: 0.75rem;
+}
+
+.bi-lede {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+/* Shared bits */
+.bi-chip {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-xl);
+  background: var(--primary-light);
+  color: var(--primary-text);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.bi-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.bi-meta span[aria-hidden] {
+  margin: 0 0.4rem;
+}
+
+/* Featured post */
+.bi-featured-section {
+  padding: var(--space-md) 0 0;
+}
+
+.bi-featured {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  background: var(--background-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.bi-featured:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.bi-featured-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.bi-featured-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: var(--space-md) clamp(1.5rem, 4vw, 3rem);
+}
+
+.bi-featured-body h2 {
+  font-family: 'Forum', serif;
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  line-height: 1.2;
+  color: var(--title-color);
+}
+
+.bi-featured-body h2 a {
+  color: inherit;
+}
+
+.bi-featured-body h2 a::after,
+.bi-card-title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.bi-featured-body p {
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.bi-read {
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+/* Filters */
+.bi-posts {
+  padding: var(--space-lg) 0;
+}
+
+.bi-posts-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: var(--space-md);
+}
+
+.bi-posts-head h2 {
+  font-family: 'Forum', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--title-color);
+}
+
+.bi-filters {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+}
+
+.bi-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.bi-filter {
+  flex-shrink: 0;
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--primary-light);
+  background: var(--background-color);
+  color: var(--text-color);
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.bi-filter:hover {
+  border-color: var(--primary-color);
+}
+
+.bi-filter[aria-pressed="true"] {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+
+.bi-filter:focus-visible {
+  outline: 2px solid var(--primary-text);
+  outline-offset: 2px;
+}
+
+.bi-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* Post grid */
+.bi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.bi-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.bi-card[hidden] {
+  display: none;
+}
+
+.bi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.bi-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.bi-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+  padding: 1.4rem 1.5rem 1.6rem;
+}
+
+.bi-card-body .bi-chip,
+.bi-featured-body .bi-chip {
+  align-self: flex-start;
+}
+
+.bi-card-title {
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--title-color);
+}
+
+.bi-card-title a {
+  color: inherit;
+}
+
+.bi-card-excerpt {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bi-card .bi-meta {
+  margin-top: auto;
+}
+
+.bi-card-extra {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.bi-card-title a:focus-visible,
+.bi-featured-body h2 a:focus-visible {
+  outline: none;
+}
+
+.bi-card:focus-within,
+.bi-featured:focus-within {
+  outline: 2px solid var(--primary-text);
+  outline-offset: 3px;
+}
+
+/* Extensions banner */
+.bi-banner {
+  padding: 0 0 var(--space-lg);
+}
+
+.bi-banner-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border-radius: var(--radius-lg);
+  background: var(--gradient-dark);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.bi-banner .bi-eyebrow {
+  color: var(--accent-gold);
+}
+
+.bi-banner h2 {
+  font-family: 'Forum', serif;
+  font-weight: 400;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.bi-banner-text {
+  max-width: 560px;
+}
+
+.bi-banner-text p:last-child {
+  line-height: 1.7;
+}
+
+.bi-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.bi-banner .button-outline {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.bi-banner .button-outline:hover {
+  border-color: white;
+}
+
+@media (max-width: 991px) {
+  .bi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bi-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .bi-featured-media img {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 640px) {
+  .bi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bi-posts-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bi-banner-actions .button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bi-card,
+  .bi-featured {
+    transition: none;
+  }
+
+  .bi-card:hover,
+  .bi-featured:hover {
+    transform: none;
+  }
+}
