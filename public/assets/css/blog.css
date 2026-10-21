@@ -372,13 +372,14 @@
   }
   
   .cta-section .button {
-    background-color: #ddbea9;
+    background: #ddbea9;
     color: #362617;
     margin-top: 1rem;
   }
   
   .cta-section .button:hover {
-    background-color: #fff;
+    background: #fff;
+    color: #362617;
   }
   
   /* Newsletter section */
@@ -649,27 +650,88 @@
   }
   
   .cta-box {
-    background-color: #ddbea9;
-    padding: 2rem;
-    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-dark);
+    padding: 3rem 2.5rem;
+    border-radius: var(--radius-md);
     text-align: center;
-    margin: 2rem 0;
+    margin: 3rem 0;
+    box-shadow: var(--shadow-lg);
   }
-  
-  .cta-box h3 {
-    color: #362617;
-    margin-bottom: 1rem;
+
+  /* Soft warm glow in the corner so the card isn't flat */
+  .cta-box::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    width: 60%;
+    height: 140%;
+    background: radial-gradient(circle, rgba(196, 168, 130, 0.18), transparent 65%);
+    pointer-events: none;
   }
-  
-  .cta-box .button {
-    background-color: #fff;
-    color: #6c584c;
-    margin: 1rem 0;
+
+  .cta-box > * {
+    position: relative;
   }
-  
-  .cta-box .button:hover {
-    background-color: #362617;
+
+  .post-content .cta-box h3 {
+    font-family: 'Forum', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
     color: #fff;
+    margin: 0 0 1rem;
+  }
+
+  /* Accent rule under the heading, same as the blog hero divider */
+  .post-content .cta-box h3::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 2px;
+    margin: 1rem auto 0;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+  }
+
+  .post-content .cta-box p {
+    max-width: 480px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.7;
+  }
+
+  .cta-box .button {
+    background: #fff;
+    color: var(--title-color);
+    font-weight: 700;
+    margin: 1.75rem 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  }
+
+  .cta-box .button:hover {
+    background: var(--accent-gold);
+    color: var(--title-color);
+  }
+
+  /* Contact line: smaller and quieter than the pitch */
+  .post-content .cta-box p:last-child {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .cta-box p a {
+    color: var(--accent-gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(212, 197, 160, 0.4);
+  }
+
+  .cta-box p a:hover {
+    color: #fff;
+    text-decoration-color: #fff;
   }
   
   .author-bio {
@@ -959,7 +1021,11 @@
     }
 
     .cta-box {
-      padding: 1.5rem;
+      padding: 2.25rem 1.25rem;
+    }
+
+    .post-content .cta-box h3 {
+      font-size: 1.6rem;
     }
 
     .author-bio {

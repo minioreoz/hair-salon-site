@@ -1311,6 +1311,15 @@ a strong {
   flex-direction: column;
 }
 
+.about-card-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  margin-bottom: 0.5rem;
+}
+
 .about-card-body .subsection-title {
   font-family: 'Forum', serif;
   font-weight: 400;
@@ -1333,6 +1342,43 @@ a strong {
   line-height: 1.7;
 }
 
+/* Keep keyword emphasis subtle so the paragraphs read evenly */
+.about-card-body p strong {
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.about-credentials {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-credentials li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  background: var(--background-color);
+  border: 1px solid var(--primary-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.about-credentials li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+}
+
 .about-card-body .button {
   margin-top: auto;
   align-self: flex-start;
@@ -1340,6 +1386,40 @@ a strong {
 
 .about-card-body .location-info {
   margin-top: auto;
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--primary-light);
+}
+
+.about-card-body .location-info i {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  color: var(--primary-text);
+  font-size: 1.1rem;
+}
+
+.about-card-body .location-info p {
+  margin: 0;
+}
+
+.about-card-body .location-info strong {
+  font-weight: 700;
+}
+
+.about-card-body .location-info a {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* About card responsive — tablet */
