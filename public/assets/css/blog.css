@@ -46,7 +46,7 @@
 }
 
 .blog-header h1 {
-  font-family: 'Forum', serif;
+  font-family: 'Noto Serif Display', serif;
   font-size: 4rem;
   margin-bottom: 0;
   color: #ffffff;
@@ -128,7 +128,7 @@
 }
 
 .blog-header-featured-title {
-  font-family: 'Forum', serif;
+  font-family: 'Noto Serif Display', serif;
   font-size: 1.3rem;
   color: #2a2825;
   line-height: 1.3;
@@ -202,7 +202,7 @@
   }
   
   .featured-post-text h2 {
-    font-family: 'Forum', serif;
+    font-family: 'Noto Serif Display', serif;
     font-size: 2.2rem;
     margin-bottom: 1rem;
     color: #362617;
@@ -395,7 +395,7 @@
   }
   
   .newsletter h2 {
-    font-family: 'Forum', serif;
+    font-family: 'Noto Serif Display', serif;
     margin-bottom: 1rem;
   }
   
@@ -438,7 +438,7 @@
   }
   
   .blog-post-header h1 {
-    font-family: 'Forum', serif;
+    font-family: 'Noto Serif Display', serif;
     font-size: 2.5rem;
     max-width: 800px;
     margin: 0 auto 2rem;
@@ -523,7 +523,7 @@
   }
   
   .post-content h2 {
-    font-family: 'Forum', serif;
+    font-family: 'Noto Serif Display', serif;
     font-size: 1.8rem;
     color: #362617;
     margin: 2.5rem 0 1.5rem;
